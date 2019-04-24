@@ -16,6 +16,7 @@ figure {
     visibility: hidden;
 }
 
+/*grid*/
 body {
     background-color: #FAF8F8;
     padding: 0;
@@ -27,6 +28,7 @@ header {
     display: grid;
     grid-template-areas:
         "logo logo logo menu";
+    margin: 2vw;
 }
 
 main {
@@ -37,22 +39,56 @@ footer {
     grid-area: footer;
 }
 
+/*logo*/
 .logo {
     grid-area: logo;
 }
 
+.logo img {
+    width: 45vw;
+}
+
+
+/*menu, burgermenu*/
 .menu {
     grid-area: menu;
 }
 
-.logo img {
-    width: 40vw;
-}
-
 .burger-button img {
-    width: 8vw;
+    width: 10vw;
+    margin-left: 39vw;
 }
 
+#menu {
+    background-color: #FAF8F8;
+    position: absolute;
+    top: 70px;
+    height: 100vh;
+    width: 100vw;
+    margin: -2vw;
+}
+
+#menu li {
+    list-style: none;
+    text-align: center;
+
+}
+
+#menu li a {
+    color: #403D3D;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*tekst, p, farver etc.*/
+p {
+    font-family: Geeza Pro;
+    color: #403D3D;
+}
 
 /*FORSIDE*/
 
