@@ -29,6 +29,7 @@ header {
     grid-template-areas:
         "logo logo logo menu";
     margin: 2vw;
+
 }
 
 main {
@@ -169,16 +170,21 @@ p {
     #menu li a {
         padding: 0;
         font-size: 0.1rem;
+        display: inline-block;
+    }
+    #menu li {
+        float: right;
     }
 
 }
 
-/*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/
+/*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
 
 @media only screen and (min-width: 1025px){
 
     .logo img{
         width: 20vw;
     }
+
 
 }
