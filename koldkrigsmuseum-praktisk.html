@@ -47,7 +47,7 @@
 
         function start() {
             async function getJson() {
-                let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/stevnsklint"
+                let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/koldkrigsmuseum"
                 let jsonData = await fetch(url);
                 indhold = await jsonData.json();
                 visIndhold();

@@ -20,14 +20,10 @@
        </nav>
    </header>
 
-   <section>
-    <div> <img src="" alt=""> </div>
 
-   <article>
-     <h1>overskrift</h1>
-     <p>tekst</p>
-    </article>
-   </section>
+     <h1 class="overskrift"></h1>
+        <main class="indhold">
+        </main>
 
    <footer>
        <div>kontakt og åbningstider</div>
@@ -36,6 +32,22 @@
        <div>presse, sprog, fond</div>
    </footer>
 
-    <script src=""></script>
+    <script>
+           let indhold;
+        document.addEventListener("DOMContentLoaded", start);
+        function start() {
+            async function getJson() {
+                let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/22"
+                let jsonData = await fetch(url);
+                indhold = await jsonData.json();
+                visIndhold();
+            }
+            function visIndhold() {
+                document.querySelector(".overskrift").textContent = indhold.title.rendered;
+                document.querySelector(".indhold").innerHTML=indhold.content.rendered;
+            }
+            getJson();
+        }
+    </script>
 </body>
 </html>
