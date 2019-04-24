@@ -151,29 +151,35 @@ p {
         visibility: visible;
     }
 
+    header{
+        display: inline-grid;
+    }
+
     .burger-button {
         display: none;
     }
 
     #menu {
         background-color: transparent;
-        display: grid;
+        margin: 0;
+
 
     }
 
     #menu li {
-        display: inline-block;
         padding: 0;
+        display: inline-grid;
+        position: relative;
+        top: -82.5px;
+        left: 230px;
+
 
     }
 
     #menu li a {
-        padding: 0;
-        font-size: 0.1rem;
-        display: inline-block;
-    }
-    #menu li {
-        float: right;
+        padding-left: 2vw;
+        font-size: 0.7rem;
+
     }
 
 }
@@ -184,6 +190,15 @@ p {
 
     .logo img{
         width: 20vw;
+    }
+
+    #menu li{
+        left:250px;
+    }
+
+    #menu li a{
+        font-size: 0.8rem;
+        padding-left: 3vw;
     }
 
 
