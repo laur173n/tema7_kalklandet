@@ -135,3 +135,50 @@ p {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
+
+/*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/
+
+@media only screen and (min-width: 528px){
+
+    .logo img{
+        width: 27vw;
+    }
+
+    /*MENU*/
+
+    .hide {
+        visibility: visible;
+    }
+
+    .burger-button {
+        display: none;
+    }
+
+    #menu {
+        background-color: transparent;
+        display: grid;
+
+    }
+
+    #menu li {
+        display: inline-block;
+        padding: 0;
+
+    }
+
+    #menu li a {
+        padding: 0;
+        font-size: 0.1rem;
+    }
+
+}
+
+/*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/
+
+@media only screen and (min-width: 1025px){
+
+    .logo img{
+        width: 20vw;
+    }
+
+}
