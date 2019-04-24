@@ -71,17 +71,21 @@ footer {
 #menu li {
     list-style: none;
     text-align: center;
+    padding-top: 2vw;
 
 }
 
 #menu li a {
     color: #403D3D;
     text-decoration: none;
+    font-family: avenir;
+    font-size: 1.2rem;
 }
 
 ul {
     margin: 0;
     padding: 0;
+    margin-top: 5vw;
 }
 
 /*tekst, p, farver etc.*/
