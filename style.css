@@ -56,7 +56,7 @@ footer {
 
 .burger-button img {
     width: 10vw;
-    margin-left: 39vw;
+    margin-left: 41vw;
 }
 
 #menu {
@@ -71,14 +71,14 @@ footer {
 #menu li {
     list-style: none;
     text-align: center;
-    padding-top: 2vw;
+    padding-top: 8vw;
 
 }
 
 #menu li a {
     color: #403D3D;
     text-decoration: none;
-    font-family: avenir;
+    font-family: Corbel;
     font-size: 1.2rem;
 }
 
@@ -90,7 +90,7 @@ ul {
 
 /*tekst, p, farver etc.*/
 p {
-    font-family: Geeza Pro;
+    font-family: Corbel;
     color: #403D3D;
 }
 
