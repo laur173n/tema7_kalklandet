@@ -14,10 +14,10 @@
        <nav>hovedmenu</nav>
    </header>
 
-  <h1 class="overskrift">Menu</h1>
+  <h1 class="overskrift"></h1>
    <main class="nyheder"></main>
 
-  <!--  <template>
+<template>
    <section class="nyhed">
    <div class="accordion">
        <h2 class="overskrift"></h2>
@@ -29,38 +29,9 @@
         <img src="" alt="">
     </div>
    </section>
-    </template>-->
-
-    <template>
-   <section class="nyhed">
-   <p class="accordion overskrift dato">
-    </p>
-
-    <div class="panel tekst">
-        <img src="" alt="">
-    </div>
-   </section>
     </template>
 
- <p class="accordion">
-                    PRISER OG BOOKING</p>
-                <div class="panel">
 
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-
-                </div>
-
-
-<!--
-<template>
-   <section class="nyhed">
-   <h2 class="overskrift"></h2>
-   <div class="dato"></div>
-        <div class="tekst"></div>
-        <img src="" alt="">
-   </section>
-    </template>
--->
    <footer>
        <div>kontakt og åbningstider</div>
        <div>adresse</div>
@@ -69,23 +40,6 @@
    </footer>
 
    <script>
-
-       //accordion
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    });
-}
 
 
     //AKTUELT
@@ -104,6 +58,7 @@ function start() {
     function visNyheder() {
         let dest = document.querySelector(".nyheder");
         let temp = document.querySelector("template");
+
         nyheder.forEach(nyhed => {
             let klon = temp.cloneNode(true).content;
             klon.querySelector(".overskrift").innerHTML = nyhed.title.rendered;
@@ -112,10 +67,32 @@ function start() {
             klon.querySelector("img").src = nyhed.billede.guid;
             dest.appendChild(klon);
         })
+lavAccordion();
 
     }
     getJson();
 }
+
+function lavAccordion(){
+       //accordion
+console.log("test");
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
+
+ }
+
     </script>
 </body>
 
