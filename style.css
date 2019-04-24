@@ -1,37 +1,97 @@
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 15px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+/*OVERALL*/
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
+figure {
+    margin: 0;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+body {
+    background-color: #FAF8F8;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        "logo logo logo menu";
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.logo img {
+    width: 40vw;
+}
+
+.burger-button img {
+    width: 8vw;
+}
+
+
+/*FORSIDE*/
+
+/*ACCORDION*/
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 .accordion:after {
-	content: '\02795';
-	/* Unicode character for "plus" sign (+) */
-	font-size: 10px;
-	float: right;
-	margin-left: 5px;
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 10px;
+    float: right;
+    margin-left: 5px;
 }
 
 .accordion.active:after {
-	content: "\2796";
-	/* Unicode character for "minus" sign (-) */
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
 }

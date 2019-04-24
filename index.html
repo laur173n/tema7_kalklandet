@@ -8,53 +8,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+    <div class="container">
+        <header>
+            <div class="logo"><img src="img/logo.png" alt="logo"></div>
 
-    <header>
-        <img src="" alt="logo">
-        <nav>
             <div class="burger-button">
-                <img src="" alt="menu">
+                <img src="img/burgermenu.png" alt="menu">
             </div>
-
-            <nav>
+            <nav id="menu" class="hide">
                 <a href="koldkrigsmuseum.html">Koldkrigsmuseum Stevnsfort</a>
                 <a href="stevnsklint.html">Stevnsklint</a>
                 <a href="geomuseum.html">Geomuseum Faxe</a>
                 <a href="aktuelt.html">Aktuelt</a>
                 <a href="om.html">Om Os</a>
             </nav>
-        </nav>
-    </header>
-
-        <h1 class="overskrift"></h1>
-        <main class="indhold">
+        </header>
+        <main>
+            <h1 class="overskrift"></h1>
+            <div class="indhold">
+            </div>
         </main>
+        <footer>
+            <div>kontakt og åbningstider</div>
+            <div>adresse</div>
+            <div>some</div>
+            <div>presse, sprog, fond</div>
+        </footer>
 
-    <footer>
-        <div>kontakt og åbningstider</div>
-        <div>adresse</div>
-        <div>some</div>
-        <div>presse, sprog, fond</div>
-    </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", sidenVises);
 
-    <script>
-           let indhold;
-        document.addEventListener("DOMContentLoaded", start);
-        function start() {
-            async function getJson() {
-                let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/8"
-                let jsonData = await fetch(url);
-                indhold = await jsonData.json();
-                visIndhold();
+            let indhold;
+
+            function sidenVises() {
+                console.log("siden vises");
+                // registrer klik på menuknap
+                document.querySelector(".burger-button").addEventListener("click", toggleMenu);
+
+                start();
+
             }
-            function visIndhold() {
-                document.querySelector(".overskrift").textContent = indhold.title.rendered;
-                document.querySelector(".indhold").innerHTML=indhold.content.rendered;
+
+            function toggleMenu() {
+                console.log("Toggle menu");
+                document.querySelector("#menu").classList.toggle("hide");
+
+                let erSkjult = document.querySelector("#menu").classList.contains("hide");
+
+                if (erSkjult == true) {
+                    //menuen er skjult - ændr menuknap til lll
+                    document.querySelector(".burger-button img").src = "img/burgermenu.png";
+                } else {
+                    //menuen er nu vist - ændr menuknap til X
+                    document.querySelector(".burger-button img").src = "img/cancel.png";
+                }
             }
-            getJson();
-        }
-    </script>
+            document.addEventListener("DOMContentLoaded", start);
+
+            function start() {
+                async function getJson() {
+                    let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/8"
+                    let jsonData = await fetch(url);
+                    indhold = await jsonData.json();
+                    visIndhold();
+                }
+
+                function visIndhold() {
+                    document.querySelector(".overskrift").textContent = indhold.title.rendered;
+                    document.querySelector(".indhold").innerHTML = indhold.content.rendered;
+                }
+                getJson();
+            }
+
+        </script>
+    </div>
+
 </body>
 
 </html>
