@@ -20,6 +20,10 @@ figure {
     visibility: hidden;
 }
 
+.sog_skjul {
+    visibility: hidden;
+}
+
 /*grid*/
 body {
     background-color: #FAF8F8;
@@ -144,6 +148,22 @@ p {
 =======
 }
 
+/*** SEARCH ****/
+
+.search-container {
+     position: relative;
+    top: 20px;
+    right: -200px;
+}
+
+input[type=text] {
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 13px;
+  border: none;
+}
+
+
 /*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/
 
 @media only screen and (min-width: 528px){
@@ -191,33 +211,7 @@ p {
 
 }
 
-/*** SEARCH ****/
 
-.search-container {
-  float: right;
-}
-
-input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.search-container button:hover {
-  background: #ccc;
-}
 
 /*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
 
@@ -234,6 +228,21 @@ input[type=text] {
     #menu li a{
         font-size: 0.8rem;
         padding-left: 3vw;
+    }
+
+    .sog_skjul{
+        visibility: visible;
+    }
+    header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        "logo menu menu search";
+    margin: 2vw;
+
+}
+    .search-container {
+        grid-area: search;
     }
 
 
