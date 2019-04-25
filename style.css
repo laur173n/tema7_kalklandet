@@ -241,9 +241,8 @@ input[type=text] {
     }
 
     #menu {
-        background-color: none;
+        background-color: transparent;
         margin: 0;
-        z-index: -5;
     }
 
 
@@ -261,11 +260,13 @@ input[type=text] {
         position: relative;
         top: -108px;
         left: 340px;
+        display:
     }
 
     #menu li a {
         font-size: 0.8rem;
         padding-left: 4vw;
+
     }
 
     .sog_skjul {
@@ -283,6 +284,7 @@ input[type=text] {
 
     .search-container {
         grid-area: search;
+
     }
 
     .search_pic img {
