@@ -44,6 +44,10 @@ footer {
     grid-area: footer;
 }
 
+footer p {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*logo*/
 .logo {
     grid-area: logo;
