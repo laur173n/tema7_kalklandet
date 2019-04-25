@@ -1,5 +1,108 @@
+<<<<<<< HEAD
 /*** ACCORDION ***/
 
+=======
+/*OVERALL*/
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+figure {
+    margin: 0;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+/*grid*/
+body {
+    background-color: #FAF8F8;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        "logo logo logo menu";
+    margin: 2vw;
+
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*logo*/
+.logo {
+    grid-area: logo;
+}
+
+.logo img {
+    width: 45vw;
+}
+
+
+/*menu, burgermenu*/
+.menu {
+    grid-area: menu;
+}
+
+.burger-button img {
+    width: 10vw;
+    margin-left: 41vw;
+}
+
+#menu {
+    background-color: #FAF8F8;
+    position: absolute;
+    top: 70px;
+    height: 100vh;
+    width: 100vw;
+    margin: -2vw;
+}
+
+#menu li {
+    list-style: none;
+    text-align: center;
+    padding-top: 8vw;
+
+}
+
+#menu li a {
+    color: #403D3D;
+    text-decoration: none;
+    font-family: Corbel;
+    font-size: 1.2rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 5vw;
+}
+
+/*tekst, p, farver etc.*/
+p {
+    font-family: Corbel;
+    color: #403D3D;
+}
+
+/*FORSIDE*/
+
+/*ACCORDION*/
+>>>>>>> origin/master
 .accordion {
     background-color: #eee;
     color: #444;
@@ -37,6 +140,104 @@
 .accordion.active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
+<<<<<<< HEAD
+=======
+}
+
+/*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/
+
+@media only screen and (min-width: 528px){
+
+    .logo img{
+        width: 27vw;
+    }
+
+    /*MENU*/
+
+    .hide {
+        visibility: visible;
+    }
+
+    header{
+        display: inline-grid;
+    }
+
+    .burger-button {
+        display: none;
+    }
+
+    #menu {
+        background-color: transparent;
+        margin: 0;
+
+
+    }
+
+    #menu li {
+        padding: 0;
+        display: inline-grid;
+        position: relative;
+        top: -82.5px;
+        left: 230px;
+
+
+    }
+
+    #menu li a {
+        padding-left: 2vw;
+        font-size: 0.7rem;
+
+    }
+
+}
+
+/*** SEARCH ****/
+
+.search-container {
+  float: right;
+}
+
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+/*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
+
+@media only screen and (min-width: 1025px){
+
+    .logo img{
+        width: 20vw;
+    }
+
+    #menu li{
+        left:250px;
+    }
+
+    #menu li a{
+        font-size: 0.8rem;
+        padding-left: 3vw;
+    }
+
+
+>>>>>>> origin/master
 }
 
 /*** GENERELT ***/
