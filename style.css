@@ -14,10 +14,7 @@ figure {
 
 .hide {
     visibility: hidden;
-}
-
-.sog_skjul {
-    display: none;
+    pointer-events: none;
 }
 
 h1{
@@ -100,6 +97,13 @@ ul {
     margin-top: 5vw;
 }
 
+.burgermenu_fix{
+    background-color: #FAF8F8;
+    position: fixed;
+    padding: 2vw;
+    margin: 0;
+}
+
 /*tekst, p, farver etc.*/
 p {
     font-family: 'Montserrat', sans-serif;
@@ -161,9 +165,12 @@ p {
 
 /*** SEARCH ****/
 
+.sog_skjul {
+    display: none;
+}
 .search-container {
     position: relative;
-    top: 20px;
+    top: 9px;
     text-align: right;
 }
 
@@ -173,6 +180,7 @@ input[type=text] {
   font-size: 13px;
   border: none;
 }
+
 
 
 /*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/
@@ -192,7 +200,6 @@ input[type=text] {
 
 #menu {
     top: 100px;
-    height: 150vh;
 }
 
 #menu li {
@@ -220,12 +227,15 @@ input[type=text] {
 
     .hide {
         visibility: visible;
+        pointer-events: initial;
     }
 
     #menu {
         background-color: transparent;
         margin: 0;
         width: initial;
+        height: 0;
+
     }
 
 
@@ -241,8 +251,9 @@ input[type=text] {
         padding: 0;
         display: inline-grid;
         position: relative;
-        top: -108px;
+        top: -120px;
         left:360px;
+
     }
 
     #menu li a{
@@ -264,6 +275,7 @@ input[type=text] {
 }
     .search-container {
         grid-area: search;
+        z-index: -999;
     }
 
     .search_pic img{

@@ -29,7 +29,7 @@
             </nav>
             <div class="search-container sog_skjul">
                 <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
+                    <input type="text" placeholder="SØG" name="search">
                 </form>
                 <div class="search_pic"><img src="img/search.png" alt=""></div>
             </div>
@@ -40,9 +40,9 @@
         <main>
             <h1 class="overskrift"></h1>
             <div class="undermenu">
-               <ul>
-                <li><a href="geomuseum-praktisk.html">Praktisk info</a></li>
-                <li><a href="geomuseum-undervisning.html">Undervisning</a></li>
+                <ul>
+                    <li><a href="geomuseum-praktisk.html">Praktisk info</a></li>
+                    <li><a href="geomuseum-undervisning.html">Undervisning</a></li>
                 </ul>
             </div>
             <div class="indhold">
@@ -93,10 +93,11 @@
                 visMenuStreger();
 
             }
+
             function visMenuStreger() {
                 document.querySelectorAll("#menu li").forEach(listepunkt => {
                     let border = `<div class="border"></div>`;
-                    listepunkt.insertAdjacentHTML("beforeend",border);
+                    listepunkt.insertAdjacentHTML("beforeend", border);
                 });
             }
 
@@ -105,6 +106,7 @@
             function toggleMenu() {
                 console.log("Toggle menu");
                 document.querySelector("#menu").classList.toggle("hide");
+                document.querySelector("header").classList.toggle("burgermenu_fix");
 
                 let erSkjult = document.querySelector("#menu").classList.contains("hide");
 

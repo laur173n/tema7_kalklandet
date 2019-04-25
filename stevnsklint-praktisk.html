@@ -30,7 +30,7 @@
             </nav>
             <div class="search-container sog_skjul">
                 <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
+                    <input type="text" placeholder="SØG" name="search">
                 </form>
                 <div class="search_pic"><img src="img/search.png" alt=""></div>
             </div>
@@ -39,12 +39,12 @@
 
         <main>
             <h1 class="overskrift"></h1>
-             <div class="undermenu">
-               <ul>
-                <li><a href="stevnsklint-oversigt.html">Oversigt Over Klinten</a></li>
-                <li><a href="stevnsklint-praktisk.html">Pratisk Info</a></li>
-                <li><a href="stevnsklint-undervisning.html">Undervisning</a></li>
-                <li><a href="stevnsklint-yderligere-info.html">Yderligere Viden</a></li>
+            <div class="undermenu">
+                <ul>
+                    <li><a href="stevnsklint-oversigt.html">Oversigt Over Klinten</a></li>
+                    <li><a href="stevnsklint-praktisk.html">Pratisk Info</a></li>
+                    <li><a href="stevnsklint-undervisning.html">Undervisning</a></li>
+                    <li><a href="stevnsklint-yderligere-info.html">Yderligere Viden</a></li>
 
                 </ul>
             </div>
@@ -104,10 +104,11 @@
                 visMenuStreger();
 
             }
+
             function visMenuStreger() {
                 document.querySelectorAll("#menu li").forEach(listepunkt => {
                     let border = `<div class="border"></div>`;
-                    listepunkt.insertAdjacentHTML("beforeend",border);
+                    listepunkt.insertAdjacentHTML("beforeend", border);
                 });
             }
 
@@ -116,6 +117,7 @@
             function toggleMenu() {
                 console.log("Toggle menu");
                 document.querySelector("#menu").classList.toggle("hide");
+                document.querySelector("header").classList.toggle("burgermenu_fix");
 
                 let erSkjult = document.querySelector("#menu").classList.contains("hide");
 
