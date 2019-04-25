@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-/*** ACCORDION ***/
-
-=======
 /*OVERALL*/
 
 .container {
@@ -106,7 +102,6 @@ p {
 /*FORSIDE*/
 
 /*ACCORDION*/
->>>>>>> origin/master
 .accordion {
     background-color: #eee;
     color: #444;
@@ -143,9 +138,7 @@ p {
 
 .accordion.active:after {
     content: "\2796";
-    /* Unicode character for "minus" sign (-) */
-<<<<<<< HEAD
-=======
+
 }
 
 /*** SEARCH ****/
@@ -172,42 +165,28 @@ input[type=text] {
         width: 27vw;
     }
 
-    /*MENU*/
+/*menu, burgermenu*/
 
-    .hide {
-        visibility: visible;
-    }
+.burger-button img {
+    width: 6vw;
+    margin-left: 63vw;
+}
 
-    header{
-        display: inline-grid;
-    }
+#menu {
+    top: 100px;
+    height: 150vh;
+}
 
-    .burger-button {
-        display: none;
-    }
+#menu li {
+    padding-top: 7vw;
 
-    #menu {
-        background-color: transparent;
-        margin: 0;
+}
 
+#menu li a {
+    font-family: Corbel;
+    font-size: 1.1rem;
+}
 
-    }
-
-    #menu li {
-        padding: 0;
-        display: inline-grid;
-        position: relative;
-        top: -82.5px;
-        left: 230px;
-
-
-    }
-
-    #menu li a {
-        padding-left: 2vw;
-        font-size: 0.7rem;
-
-    }
 
 }
 
@@ -221,13 +200,37 @@ input[type=text] {
         width: 20vw;
     }
 
+    .hide {
+        visibility: visible;
+    }
+
+    #menu {
+        background-color: transparent;
+        margin: 0;
+
+
+    }
+
+
+    header{
+        display: inline-grid;
+    }
+
+    .burger-button {
+        display: none;
+    }
+
     #menu li{
-        left:250px;
+        padding: 0;
+        display: inline-grid;
+        position: relative;
+        top: -108px;
+        left:340px;
     }
 
     #menu li a{
         font-size: 0.8rem;
-        padding-left: 3vw;
+        padding-left: 4vw;
     }
 
     .sog_skjul{
@@ -245,8 +248,11 @@ input[type=text] {
         grid-area: search;
     }
 
+    .search_pic img{
+        width: 24px;
+        position: absolute;
+        top: 0.4vw;
+        left: 10.5vw;
+    }
 
->>>>>>> origin/master
 }
-
-/*** GENERELT ***/
