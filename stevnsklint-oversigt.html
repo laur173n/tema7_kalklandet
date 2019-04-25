@@ -5,38 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stevns klint oversigt</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <img src="" alt="logo">
-        <nav>hovedmenu</nav>
-        <nav class="undermenu">
-            <a href="stevnsklint-praktisk.html">praktisk info</a>
-            <a href="stevnsklint-undervisning.html">undervisning</a>
-            <a href="stevnsklint-yderligere-info.html">yderligere viden</a>
+   <header>
+       <img src="" alt="logo">
+       <nav>hovedmenu</nav>
+       <nav class="undermenu">
+           <a href="stevnsklint-praktisk.html">praktisk info</a>
+           <a href="stevnsklint-undervisning.html">undervisning</a>
+           <a href="stevnsklint-yderligere-info.html">yderligere viden</a>
 
-        </nav>
-    </header>
+       </nav>
+   </header>
 
 
     <h1 class="overskrift"></h1>
-    <main class="indhold">
-    </main>
+        <main class="indhold">
+        </main>
 
-    <footer>
-        <div>kontakt og åbningstider</div>
-        <div>adresse</div>
-        <div>some</div>
-        <div>presse, sprog, fond</div>
-    </footer>
+         <footer>
+       <div>kontakt og åbningstider</div>
+       <div>adresse</div>
+       <div>some</div>
+       <div>presse, sprog, fond</div>
+   </footer>
 
-    <script>
-        let indhold;
+   <script>
+           let indhold;
         document.addEventListener("DOMContentLoaded", start);
-
         function start() {
             async function getJson() {
                 let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/106"
@@ -44,10 +42,9 @@
                 indhold = await jsonData.json();
                 visIndhold();
             }
-
             function visIndhold() {
                 document.querySelector(".overskrift").textContent = indhold.title.rendered;
-                document.querySelector(".indhold").innerHTML = indhold.content.rendered;
+                document.querySelector(".indhold").innerHTML=indhold.content.rendered;
             }
             getJson();
         }

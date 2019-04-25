@@ -5,30 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geomuseum Faxe praktisk</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <img src="" alt="logo">
-        <nav>hovedmenu</nav>
+   <header>
+       <img src="" alt="logo">
+       <nav>hovedmenu</nav>
 
 
         <nav class="undermenu">
             <a href="geomuseum-praktisk.html">praktisk info</a>
-            <a href="geomuseum-undervisning.html">undervisning</a>
-            <a href="geomuseum-yderligere-info.html">yderligere viden</a>
+           <a href="geomuseum-undervisning.html">undervisning</a>
+           <a href="geomuseum-yderligere-info.html">yderligere viden</a>
 
-        </nav>
-    </header>
+       </nav>
+   </header>
 
-    <h2>OVERSKRIFT</h2>
+   <h2>OVERSKRIFT</h2>
 
-    <h1 class="overskrift"></h1>
+  <h1 class="overskrift"></h1>
     <main class="indhold"></main>
 
-    <template>
+   <template>
         <section class="indhold">
             <h2 class="overskrift accordion"></h2>
             <div class="tekst panel"></div>
@@ -37,15 +36,15 @@
 
 
 
-    <footer>
-        <div>kontakt og åbningstider</div>
-        <div>adresse</div>
-        <div>some</div>
-        <div>presse, sprog, fond</div>
-    </footer>
+   <footer>
+       <div>kontakt og åbningstider</div>
+       <div>adresse</div>
+       <div>some</div>
+       <div>presse, sprog, fond</div>
+   </footer>
 
     <script>
-        let indhold = [];
+     let indhold = [];
         document.addEventListener("DOMContentLoaded", start);
 
         function start() {
@@ -70,25 +69,25 @@
             getJson();
         }
 
-        function lavAccordion() {
-            //accordion
-            console.log("test");
-            var acc = document.getElementsByClassName("accordion");
-            var i;
+        function lavAccordion(){
+       //accordion
+console.log("test");
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
-            }
-
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
         }
-    </script>
+    });
+}
+
+ }
+</script>
 </body>
 </html>
