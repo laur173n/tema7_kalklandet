@@ -45,10 +45,6 @@ footer {
     grid-area: footer;
 }
 
-footer p {
-    font-family: 'Montserrat', sans-serif;
-}
-
 /*logo*/
 .logo {
     grid-area: logo;
@@ -100,7 +96,7 @@ ul {
 
 /*tekst, p, farver etc.*/
 p {
-    font-family: Corbel;
+    font-family: 'Montserrat', sans-serif;
     color: #403D3D;
 }
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stevns Klint praktisk</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
@@ -41,7 +42,6 @@
     </footer>
 
     <script>
-
         let indhold = [];
         document.addEventListener("DOMContentLoaded", start);
 
@@ -67,25 +67,25 @@
             getJson();
         }
 
-        function lavAccordion(){
-       //accordion
-console.log("test");
-var acc = document.getElementsByClassName("accordion");
-var i;
+        function lavAccordion() {
+            //accordion
+            console.log("test");
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+
         }
-    });
-}
-
- }
     </script>
 </body>
 </html>
