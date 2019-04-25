@@ -87,6 +87,7 @@ footer {
     text-decoration: none;
     font-family: Corbel;
     font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -99,6 +100,10 @@ ul {
 p {
     font-family: 'Montserrat', sans-serif;
     color: #403D3D;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*footer*/
@@ -206,7 +211,6 @@ input[type=text] {
 }
 
 #menu li a {
-    font-family: Corbel;
     font-size: 1.1rem;
 }
 
