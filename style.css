@@ -189,7 +189,7 @@ input[type=text] {
     #menu {
         background-color: transparent;
         margin: 0;
-
+        left: 280px;
 
     }
 
@@ -197,7 +197,7 @@ input[type=text] {
         padding: 0;
         display: inline-grid;
         position: relative;
-        top: -82.5px;
+        top: -87px;
         left: 230px;
 
 
