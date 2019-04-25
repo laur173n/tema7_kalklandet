@@ -17,7 +17,11 @@ figure {
 }
 
 .sog_skjul {
-    visibility: hidden;
+    display: none;
+}
+
+h1{
+    width: 10vw;
 }
 
 /*grid*/
@@ -39,10 +43,12 @@ header {
 
 main {
     grid-area: main;
+    width: 100vw;
 }
 
 footer {
     grid-area: footer;
+    width: 100vw;
 }
 
 /*logo*/
@@ -72,7 +78,6 @@ footer {
     height: 160vh;
     width: 100vw;
     margin: -2vw;
-    z-index: 5;
 }
 
 #menu li {
@@ -85,22 +90,8 @@ footer {
 #menu li a {
     color: #403D3D;
     text-decoration: none;
+    font-family: Corbel;
     font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-/*undermenu*/
-.undermenu li {
-    text-align: center;
-    border-bottom: 1px solid black;
-    text-decoration: none;
-}
-
-.undermenu a {
-    text-decoration: none;
-    color: #403D3D;
-    line-height: 50px;
 }
 
 ul {
@@ -109,31 +100,24 @@ ul {
     margin-top: 5vw;
 }
 
-
 /*tekst, p, farver etc.*/
 p {
     font-family: 'Montserrat', sans-serif;
     color: #403D3D;
 }
 
-a {
-    font-family: 'Montserrat', sans-serif;
-}
-
 /*footer*/
 
-.some_footer img {
+.some_footer img{
     width: 10vw;
 }
 
 /*FORSIDE*/
 
-.splash img {
+.splash img{
     width: 100vw;
-    position: relative;
-    z-index: 0;
 
-}
+    }
 
 /*ACCORDION*/
 .accordion {
@@ -180,49 +164,47 @@ a {
 .search-container {
     position: relative;
     top: 20px;
-    right: -200px;
+    text-align: right;
 }
 
 input[type=text] {
-    padding: 5px;
-    margin-top: 5px;
-    font-size: 13px;
-    border: none;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 13px;
+  border: none;
 }
 
 
 /*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/
 
-@media only screen and (min-width: 528px) {
+@media only screen and (min-width: 528px){
 
-    .logo img {
+    .logo img{
         width: 27vw;
     }
 
-    /*menu, burgermenu*/
+/*menu, burgermenu*/
 
-    .burger-button img {
-        width: 6vw;
-        margin-left: 63vw;
-    }
+.burger-button img {
+    width: 6vw;
+    margin-left: 63vw;
+}
 
-    #menu {
-        top: 100px;
-        height: 150vh;
-    }
+#menu {
+    top: 100px;
+    height: 150vh;
+}
 
-    #menu li {
-        padding-top: 7vw;
+#menu li {
+    padding-top: 7vw;
 
-    }
+}
 
-    #menu li a {
-        font-size: 1.1rem;
-    }
+#menu li a {
+    font-family: Corbel;
+    font-size: 1.1rem;
+}
 
-    .undermenu ul {
-        margin-top: 0rem;
-    }
 
 }
 
@@ -230,9 +212,9 @@ input[type=text] {
 
 /*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px){
 
-    .logo img {
+    .logo img{
         width: 20vw;
     }
 
@@ -243,10 +225,11 @@ input[type=text] {
     #menu {
         background-color: transparent;
         margin: 0;
+        width: initial;
     }
 
 
-    header {
+    header{
         display: inline-grid;
     }
 
@@ -254,68 +237,44 @@ input[type=text] {
         display: none;
     }
 
-    #menu li {
+    #menu li{
         padding: 0;
         display: inline-grid;
         position: relative;
         top: -108px;
-        left: 340px;
-        display:
+        left:360px;
     }
 
-    #menu li a {
+    #menu li a{
         font-size: 0.8rem;
         padding-left: 4vw;
-
     }
 
-    .sog_skjul {
-        visibility: visible;
+    .sog_skjul{
+        display: initial;
     }
 
     header {
-        grid-area: header;
-        display: grid;
-        grid-template-areas:
-            "logo menu menu search";
-        margin: 2vw;
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        "logo menu menu search";
+    margin: 2vw;
 
-    }
-
+}
     .search-container {
         grid-area: search;
-
     }
 
-    .search_pic img {
+    .search_pic img{
         width: 24px;
         position: absolute;
         top: 0.4vw;
-        left: 10.5vw;
+        right: 0;
     }
 
-    main {
+    main{
         margin-top: -3vw;
     }
-
-
-    .undermenu li {
-        border-bottom: none;
-        display: inline-block;
-        padding: 0rem 1rem;
-    }
-
-    .undermenu ul {
-        text-align: right;
-        border-bottom: 1px solid black;
-        margin-bottom: 1rem;
-        margin-top: 0rem;
-    }
-
-    h1 {
-        margin-top: 4rem;
-    }
-
-
 
 }
