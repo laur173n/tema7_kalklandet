@@ -109,7 +109,8 @@ p {
 /*FORSIDE*/
 
 .splash img{
-        width: 100vw;
+    width: 100vw;
+    position: relative;
 
     }
 
@@ -265,6 +266,8 @@ input[type=text] {
         left: 10.5vw;
     }
 
-
+    main{
+        margin-top: -3vw;
+    }
 
 }

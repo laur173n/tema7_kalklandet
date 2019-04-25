@@ -9,48 +9,89 @@
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <div class="logo"><img src="img/logo.png" alt="logo"></div>
+            </a>
 
-   <header>
-       <img src="" alt="logo">
-       <nav>hovedmenu</nav>
+            <div class="burger-button">
+                <img src="img/burgermenu.png" alt="menu">
+            </div>
+            <nav id="menu" class="hide">
+                <ul>
+                    <li><a href="koldkrigsmuseum.html">KOLDKRIGSMUSEUM <br>STEVNSFORT</a></li>
+                    <li><a href="stevnsklint.html">STEVNS KLINT</a></li>
+                    <li><a href="geomuseum.html">GEOMUSEUM <br>FAXE</a></li>
+                    <li><a href="aktuelt.html">AKTUELT</a></li>
+                    <li><a href="om.html">OM OS</a></li>
+                </ul>
+            </nav>
+            <div class="search-container sog_skjul">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+                <div class="search_pic"><img src="img/search.png" alt=""></div>
+            </div>
+
+        </header>
 
 
-       <nav class="undermenu">
-            <a href="geomuseum-praktisk.html">praktisk info</a>
-           <a href="geomuseum-undervisning.html">undervisning</a>
-           <a href="geomuseum-yderligere-info.html">yderligere viden</a>
-
-       </nav>
-   </header>
-
-
-     <h1 class="overskrift"></h1>
-        <main class="indhold">
+        <main>
+            <h1 class="overskrift"></h1>
+            <div class="indhold">
+            </div>
         </main>
 
-   <footer>
-       <div>kontakt og åbningstider</div>
-       <div>adresse</div>
-       <div>some</div>
-       <div>presse, sprog, fond</div>
-   </footer>
+        <footer>
+            <div class="adresse_footer">
+                <p class="overskrift_footer">ADRESSE</p>
+                <p class="brodtekst_footer">Østsjællands Museum
+                    Rådhusvej 2
+                    4640 Faxe</p>
 
-    <script>
-           let indhold;
-        document.addEventListener("DOMContentLoaded", start);
-        function start() {
-            async function getJson() {
-                let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/18"
-                let jsonData = await fetch(url);
-                indhold = await jsonData.json();
-                visIndhold();
+            </div>
+            <div class="kontakt_footer">
+                <p class="overskrift_footer">KONTAKT</p>
+                <p class="brodtekst_footer">+45 56502806
+                    Telefonen er åben mandag til fredag
+                    fra kl. 9 til 15.</p>
+
+            </div>
+            <div class="some_footer">
+                <p class="overskrift_footer">FØLG OS</p>
+                <img src="img/icon_fb.png" alt="facebook">
+                <img src="img/icon_instagram.png" alt="instagram">
+                <img src="img/icon_tw.png" alt="twitter">
+            </div>
+            <div class="andet_footer">
+                <p class="overskrift_footer">SPROG</p>
+                <p class="overskrift_footer">PRESSE</p>
+                <p class="overskrift_footer">FONDE OG SPONSORATER</p>
+            </div>
+
+
+        </footer>
+
+        <script>
+            let indhold;
+            document.addEventListener("DOMContentLoaded", start);
+
+            function start() {
+                async function getJson() {
+                    let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/18"
+                    let jsonData = await fetch(url);
+                    indhold = await jsonData.json();
+                    visIndhold();
+                }
+
+                function visIndhold() {
+                    document.querySelector(".overskrift").textContent = indhold.title.rendered;
+                    document.querySelector(".indhold").innerHTML = indhold.content.rendered;
+                }
+                getJson();
             }
-            function visIndhold() {
-                document.querySelector(".overskrift").textContent = indhold.title.rendered;
-                document.querySelector(".indhold").innerHTML=indhold.content.rendered;
-            }
-            getJson();
-        }
-    </script>
+        </script>
+    </div>
 </body>
 </html>
