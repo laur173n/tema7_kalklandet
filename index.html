@@ -42,8 +42,12 @@
             <div class="indhold">
             </div>
 
-            <img src="1x/kort_desktop.png" alt="kort_desktop">
-            <img src="1x/kort_tabletmobile.png" alt="kort_tabletmobile">
+            <picture class="splash">
+                <source media="(min-width: 1024px)" srcset="1x/kort_desktop.png">
+                <source media="(min-width: 528px)" srcset="1x/kort_tabletmobile.png">
+                <img src="1x/kort_tabletmobile.png" alt="Kort">
+            </picture>
+
         </main>
         <footer>
             <div class="adresse_footer">
@@ -62,9 +66,9 @@
             </div>
             <div class="some_footer">
                 <p class="overskrift_footer">FØLG OS</p>
-                <img src="" alt="facebook">
-                <img src="" alt="instagram">
-                <img src="" alt="linkedin">
+                <img src="img/icon_fb.png" alt="facebook">
+                <img src="img/icon_instagram.png" alt="instagram">
+                <img src="img/icon_tw.png" alt="twitter">
             </div>
             <div class="andet_footer">
                 <p class="overskrift_footer">SPROG</p>
@@ -119,6 +123,7 @@
                 }
                 getJson();
             }
+
         </script>
     </div>
 

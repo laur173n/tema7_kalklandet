@@ -100,6 +100,12 @@ p {
     color: #403D3D;
 }
 
+/*footer*/
+
+.some_footer img{
+    width: 10vw;
+}
+
 /*FORSIDE*/
 
 /*ACCORDION*/
@@ -208,8 +214,6 @@ input[type=text] {
     #menu {
         background-color: transparent;
         margin: 0;
-
-
     }
 
 
@@ -254,6 +258,11 @@ input[type=text] {
         position: absolute;
         top: 0.4vw;
         left: 10.5vw;
+    }
+
+    .splash img{
+        width: 100vw;
+
     }
 
 }
