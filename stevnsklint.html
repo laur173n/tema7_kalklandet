@@ -40,6 +40,15 @@
 
         <main>
             <h1 class="overskrift"></h1>
+            <div class="undermenu">
+               <ul>
+                <li><a href="stevnsklint-oversigt.html">Oversigt Over Klinten</a></li>
+                <li><a href="stevnsklint-praktisk.html">Pratisk Info</a></li>
+                <li><a href="stevnsklint-undervisning.html">Undervisning</a></li>
+                <li><a href="stevnsklint-yderligere-info.html">Yderligere Viden</a></li>
+
+                </ul>
+            </div>
             <div class="indhold">
             </div>
         </main>
@@ -75,8 +84,42 @@
         </footer>
 
         <script>
+            document.addEventListener("DOMContentLoaded", sidenVises);
+
             let indhold;
-            document.addEventListener("DOMContentLoaded", start);
+
+            function sidenVises() {
+                console.log("siden vises");
+                // registrer klik på menuknap
+                document.querySelector(".burger-button").addEventListener("click", toggleMenu);
+
+                start();
+                visMenuStreger();
+
+            }
+            function visMenuStreger() {
+                document.querySelectorAll("#menu li").forEach(listepunkt => {
+                    let border = `<div class="border"></div>`;
+                    listepunkt.insertAdjacentHTML("beforeend",border);
+                });
+            }
+
+
+
+            function toggleMenu() {
+                console.log("Toggle menu");
+                document.querySelector("#menu").classList.toggle("hide");
+
+                let erSkjult = document.querySelector("#menu").classList.contains("hide");
+
+                if (erSkjult == true) {
+                    //menuen er skjult - ændr menuknap til lll
+                    document.querySelector(".burger-button img").src = "img/burgermenu.png";
+                } else {
+                    //menuen er nu vist - ændr menuknap til X
+                    document.querySelector(".burger-button img").src = "img/cancel.png";
+                }
+            }
 
             function start() {
                 async function getJson() {

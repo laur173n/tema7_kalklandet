@@ -80,8 +80,42 @@
         </footer>
 
         <script>
-            let indhold = [];
-            document.addEventListener("DOMContentLoaded", start);
+            document.addEventListener("DOMContentLoaded", sidenVises);
+
+            let indhold;
+
+            function sidenVises() {
+                console.log("siden vises");
+                // registrer klik på menuknap
+                document.querySelector(".burger-button").addEventListener("click", toggleMenu);
+
+                start();
+                visMenuStreger();
+
+            }
+            function visMenuStreger() {
+                document.querySelectorAll("#menu li").forEach(listepunkt => {
+                    let border = `<div class="border"></div>`;
+                    listepunkt.insertAdjacentHTML("beforeend",border);
+                });
+            }
+
+
+
+            function toggleMenu() {
+                console.log("Toggle menu");
+                document.querySelector("#menu").classList.toggle("hide");
+
+                let erSkjult = document.querySelector("#menu").classList.contains("hide");
+
+                if (erSkjult == true) {
+                    //menuen er skjult - ændr menuknap til lll
+                    document.querySelector(".burger-button img").src = "img/burgermenu.png";
+                } else {
+                    //menuen er nu vist - ændr menuknap til X
+                    document.querySelector(".burger-button img").src = "img/cancel.png";
+                }
+            }
 
             function start() {
                 async function getJson() {
