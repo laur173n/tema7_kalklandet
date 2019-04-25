@@ -108,6 +108,11 @@ p {
 
 /*FORSIDE*/
 
+.splash img{
+        width: 100vw;
+
+    }
+
 /*ACCORDION*/
 .accordion {
     background-color: #eee;
@@ -260,9 +265,6 @@ input[type=text] {
         left: 10.5vw;
     }
 
-    .splash img{
-        width: 100vw;
 
-    }
 
 }
