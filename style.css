@@ -33,6 +33,7 @@ header {
     grid-template-areas:
         "logo logo logo menu";
     margin: 2vw;
+    height: 12vh;
 
 }
 
