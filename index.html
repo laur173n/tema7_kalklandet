@@ -22,9 +22,9 @@
             </div>
             <nav id="menu" class="hide">
                 <ul>
-                    <li><a href="koldkrigsmuseum.html">KOLDKRIGSMUSEUM <br>STEVNSFORT</a></li>
+                    <li><a href="koldkrigsmuseum.html">KOLDKRIGSMUSEUM STEVNSFORT</a></li>
                     <li><a href="stevnsklint.html">STEVNS KLINT</a></li>
-                    <li><a href="geomuseum.html">GEOMUSEUM <br>FAXE</a></li>
+                    <li><a href="geomuseum.html">GEOMUSEUM FAXE</a></li>
                     <li><a href="aktuelt.html">AKTUELT</a></li>
                     <li><a href="om.html">OM OS</a></li>
                 </ul>
@@ -80,7 +80,7 @@
         </footer>
 
         <script>
-            document.addEventListener("DOMContentLoaded", sidenVises);
+                  document.addEventListener("DOMContentLoaded", sidenVises);
 
             let indhold;
 
@@ -90,8 +90,17 @@
                 document.querySelector(".burger-button").addEventListener("click", toggleMenu);
 
                 start();
+                visMenuStreger();
 
             }
+
+            function visMenuStreger() {
+                document.querySelectorAll("#menu li").forEach(listepunkt => {
+                    let border = `<div class="border"></div>`;
+                    listepunkt.insertAdjacentHTML("beforeend", border);
+                });
+            }
+
 
             function toggleMenu() {
                 console.log("Toggle menu");
@@ -109,7 +118,7 @@
                     document.querySelector(".burger-button img").src = "img/cancel.png";
                 }
             }
-            document.addEventListener("DOMContentLoaded", start);
+
 
             function start() {
                 async function getJson() {
