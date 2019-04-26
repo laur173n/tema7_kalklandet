@@ -437,22 +437,22 @@ input[type=text] {
     .geomuseum_lokation img {
         position: absolute;
         width: 30vw;
-        top: 41vw;
-        left: 54vw;
+        top: 42vw;
+        left: 60vw;
     }
 
     .stevnsklint_lokation img {
         position: absolute;
         width: 30vw;
-        top: 42vw;
-        left: 42vw;
+        top: 43vw;
+        left: 48vw;
     }
 
     .koldkrig_lokation img {
         position: absolute;
-        width: 30vw;
-        top: 40vw;
-        left: 70vw;
+        width: 27vw;
+        top: 42vw;
+        left: 76vw;
     }
 
 }
