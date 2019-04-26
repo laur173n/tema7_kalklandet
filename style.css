@@ -189,26 +189,6 @@ p {
     z-index: -1;
 }
 
-.geomuseum_lokation img {
-    position: absolute;
-    width: 30vw;
-    top: 41vw;
-    left: 54vw;
-}
-
-.stevnsklint_lokation img {
-    position: absolute;
-    width: 30vw;
-    top: 43vw;
-    left: 56vw;
-}
-
-.koldkrig_lokation img {
-    position: absolute;
-    width: 30vw;
-    top: 40vw;
-    left: 70vw;
-}
 
 /*ACCORDION*/
 .accordion {
@@ -309,7 +289,9 @@ input[type=text] {
 
 
 /*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
-@media only screen and (min-width: 1025px) {
+
+@media only screen and (min-width: 1270px) {
+
     .logo img {
         width: 20vw;
     }
@@ -342,12 +324,12 @@ input[type=text] {
         display: inline-grid;
         position: relative;
         top: -120px;
-        left: 190px;
+        left: 290px;
 
     }
 
     #menu li a {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding-left: 0vw;
         padding: 0 12px 0 18px;
     }
@@ -452,27 +434,36 @@ input[type=text] {
         color: #F45D2F;
     }
 
-}
-
-
-@media only screen and (min-width: 1270px) {
-
-
-    #menu li {
-        top: -120px;
-        left: 360px;
+    .geomuseum_lokation img {
+        position: absolute;
+        width: 30vw;
+        top: 41vw;
+        left: 54vw;
     }
 
+    .stevnsklint_lokation img {
+        position: absolute;
+        width: 30vw;
+        top: 42vw;
+        left: 42vw;
+    }
+
+    .koldkrig_lokation img {
+        position: absolute;
+        width: 30vw;
+        top: 40vw;
+        left: 70vw;
+    }
 
 }
 
 /*-----------------------------MEDIAQUERY FOR WEBSITE 1600px------------------------------------*/
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1300px) {
 
     #menu li {
         top: -120px;
-        left: 620px;
+        left: 490px;
 
     }
 
