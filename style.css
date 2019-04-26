@@ -177,6 +177,9 @@ p {
     color: #F45D2F;
 }
 
+.brodtekst_footer {
+    color: #403D3D;
+}
 
 /*FORSIDE*/
 
@@ -321,7 +324,7 @@ input[type=text] {
 
     }
 
-    #menu li a{
+    #menu li a {
         font-size: 0.8rem;
         padding-left: 0vw;
         padding: 0 12px 0 18px;
@@ -378,7 +381,7 @@ input[type=text] {
         display: inline-block;
     }
 
-/*    footer */
+    /*    footer */
 
     .footer_udengrid {
         padding: 5vw 10vw 5vw 10vw;
