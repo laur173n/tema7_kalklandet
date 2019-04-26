@@ -321,7 +321,7 @@ input[type=text] {
 
     }
 
-    #menu li a{
+    #menu li a {
         font-size: 0.8rem;
         padding-left: 0vw;
         padding: 0 12px 0 18px;
@@ -378,14 +378,14 @@ input[type=text] {
         display: inline-block;
     }
 
-/*    footer */
+    /*    footer */
 
     .footer_udengrid {
         padding: 5vw 10vw 5vw 10vw;
         display: flex;
         align-items: flex-start;
         justify-content: space-around;
-        background-color: white;
+        background-color: #FAF8F8;
     }
 
     .overstebox_footer {
