@@ -182,7 +182,31 @@ p {
 
 .splash img {
     width: 100vw;
+    position: relative;
+    z-index: -1;
+}
 
+.geomuseum_lokation img {
+    position: absolute;
+    width: 2vw;
+    width: 40vw;
+    top: 360px;
+    left: 40px;
+}
+
+.stevnsklint_lokation img {
+    position: absolute;
+    width: 2vw;
+    width: 40vw;
+    top: 360px;
+    left: 40px;
+}
+
+.koldkrig_lokation img {
+    position: absolute;
+    width: 40vw;
+    top: 30rem;
+    left: 30rem;
 }
 
 /*ACCORDION*/
