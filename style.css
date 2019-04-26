@@ -58,7 +58,7 @@ footer {
 }
 
 
-/*menu, burgermenu*/
+/*menu, burgermenu, undermenu */
 .menu {
     grid-area: menu;
 }
@@ -102,6 +102,18 @@ ul {
     position: fixed;
     padding: 2vw;
     margin: 0;
+}
+
+#undermenu li {
+    text-align: center;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+#undermenu a {
+    text-decoration: none;
+    color: #403D3D;
+    line-height: 50px;
 }
 
 /*tekst, p, farver etc.*/
@@ -212,6 +224,9 @@ input[type=text] {
     font-size: 1.1rem;
 }
 
+#undermenu ul{
+        margin-top: 0;
+}
 
 }
 
@@ -241,6 +256,8 @@ input[type=text] {
 
     header{
         display: inline-grid;
+        position: static;
+
     }
 
     .burger-button {
@@ -259,6 +276,19 @@ input[type=text] {
     #menu li a{
         font-size: 0.8rem;
         padding-left: 4vw;
+    }
+
+    #undermenu li {
+        border-bottom: none;
+        display: inline-block;
+        padding: 0rem 1rem;
+    }
+
+    #undermenu ul {
+        text-align: right;
+        border-bottom: 1px solid black;
+        margin-bottom: 1rem;
+        margin-top: 0rem;
     }
 
     .sog_skjul{
