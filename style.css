@@ -132,9 +132,7 @@ p {
 
 /*footer*/
 
-.some_footer img{
-    width: 10vw;
-}
+
 
 /*FORSIDE*/
 
@@ -241,9 +239,7 @@ input[type=text] {
 
 
 /*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
-
 @media only screen and (min-width: 1025px){
-
     .logo img{
         width: 20vw;
     }
@@ -258,7 +254,6 @@ input[type=text] {
         margin: 0;
         width: initial;
         height: 0;
-
     }
 
 
@@ -271,6 +266,67 @@ input[type=text] {
     .burger-button {
         display: none;
     }
+
+    #menu li{
+        padding: 0;
+        display: inline-grid;
+        position: relative;
+        top: -120px;
+        left:190px;
+
+    }
+
+    #menu li a{
+        font-size: 0.8rem;
+        padding-left: 4vw;
+    }
+
+    #undermenu li {
+        border-bottom: none;
+        display: inline-block;
+        padding: 0rem 1rem;
+    }
+
+    #undermenu ul {
+        text-align: right;
+        border-bottom: 1px solid black;
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+    }
+
+    .sog_skjul{
+        display: initial;
+    }
+
+    header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        "logo menu menu search";
+    margin: 2vw;
+
+}
+    .search-container {
+        grid-area: search;
+        z-index: -999;
+    }
+
+    .search_pic img{
+        width: 24px;
+        position: absolute;
+        top: 0.4vw;
+        right: 0;
+    }
+
+    main{
+        margin-top: -3vw;
+    }
+
+}
+
+
+@media only screen and (min-width: 1270px){
+
 
     #menu li{
         padding: 0;
@@ -328,3 +384,16 @@ input[type=text] {
     }
 
 }
+
+/*-----------------------------MEDIAQUERY FOR WEBSITE 1600px------------------------------------*/
+
+@media only screen and (min-width: 1600px){
+
+    #menu li{
+        top: -120px;
+        left:620px;
+
+    }
+
+
+    }
