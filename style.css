@@ -188,25 +188,23 @@ p {
 
 .geomuseum_lokation img {
     position: absolute;
-    width: 2vw;
-    width: 40vw;
-    top: 360px;
-    left: 40px;
+    width: 30vw;
+    top: 41vw;
+    left: 54vw;
 }
 
 .stevnsklint_lokation img {
     position: absolute;
-    width: 2vw;
-    width: 40vw;
-    top: 360px;
-    left: 40px;
+    width: 30vw;
+    top: 43vw;
+    left: 56vw;
 }
 
 .koldkrig_lokation img {
     position: absolute;
-    width: 40vw;
-    top: 30rem;
-    left: 30rem;
+    width: 30vw;
+    top: 40vw;
+    left: 70vw;
 }
 
 /*ACCORDION*/
