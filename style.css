@@ -159,7 +159,7 @@ p {
 .somewrapper_footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -173,8 +173,16 @@ p {
     width: 10vw;
 }
 
-.overskrift_footer {
-    color: #F45D2F;
+.footer_geomuseum .overskrift_footer {
+    color: #26A6A1;
+}
+
+.footer_kkm .overskrift_footer {
+    color: #3A7287;
+}
+
+.footer_stevns .overskrift_footer {
+    color: #1283AB;
 }
 
 .brodtekst_footer {
