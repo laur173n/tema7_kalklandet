@@ -111,14 +111,14 @@ ul {
     margin: 0;
 }
 
-#undermenu li {
+.undermenu li {
     text-align: center;
     border-bottom: 1px solid black;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
 
-#undermenu a {
+.undermenu a {
     text-decoration: none;
     color: #403D3D;
     line-height: 50px;
@@ -238,7 +238,7 @@ p {
 
 .search-container {
     position: relative;
-    top: 9px;
+    top: 13px;
     text-align: right;
 }
 
@@ -293,7 +293,7 @@ input[type=text] {
 @media only screen and (min-width: 1270px) {
 
     .logo img {
-        width: 20vw;
+        width: 18vw;
     }
 
     .hide {
@@ -323,28 +323,29 @@ input[type=text] {
         padding: 0;
         display: inline-grid;
         position: relative;
-        top: -120px;
-        left: 290px;
+        top: -115px;
+        left: 330px;
 
     }
 
     #menu li a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding-left: 0vw;
         padding: 0 12px 0 18px;
     }
 
-    #undermenu li {
+    .undermenu li {
         border-bottom: none;
         display: inline-block;
         padding: 0rem 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9rem;
     }
 
-    #undermenu ul {
+    .undermenu ul {
         text-align: right;
-        border-bottom: 1px solid black;
         margin-bottom: 1rem;
-        margin-top: 0rem;
+        margin-top: 1.5vw;
     }
 
     .sog_skjul {
@@ -376,10 +377,38 @@ input[type=text] {
         margin-top: -3vw;
     }
 
+    /*    BORDER I HEADER*/
     .border {
         width: 1px;
         height: 60px;
         background-color: #F45D2F;
+        transform: rotate(20deg);
+        margin-top: -35px;
+        display: inline-block;
+    }
+
+    .border_kold {
+        width: 1px;
+        height: 60px;
+        background-color: #3A7287;
+        transform: rotate(20deg);
+        margin-top: -35px;
+        display: inline-block;
+    }
+
+    .border_stevns {
+        width: 1px;
+        height: 60px;
+        background-color: #1283AB;
+        transform: rotate(20deg);
+        margin-top: -35px;
+        display: inline-block;
+    }
+
+    .border_geo {
+        width: 1px;
+        height: 60px;
+        background-color: #26A6A1;
         transform: rotate(20deg);
         margin-top: -35px;
         display: inline-block;
@@ -455,6 +484,52 @@ input[type=text] {
         left: 76vw;
     }
 
+
+    /*----------GRID STRUKTUR----------*/
+
+    main {
+        display: grid;
+        grid-template-areas:
+            "billede billede";
+        "overskrift undermenu";
+        "tekst tekst";
+        margin: 0;
+        padding: 0;
+    }
+
+    .indhold figure img {
+        grid-area: billede;
+        margin-bottom: 7vw;
+        padding: 0;
+        width: 100vw;
+
+    }
+
+    .overskrift {
+        grid-area: overskrift;
+        position: absolute;
+        top: 35vw;
+        width: 100%;
+        border-bottom: 2px #403D3D solid;
+        color: #403D3D;
+        padding-left: 1vw;
+    }
+
+    .undermenu {
+        grid-area: undermenu;
+        position: absolute;
+        top: 35vw;
+        right: 0;
+
+    }
+
+    .indhold p {
+        grid-area: tekst;
+        color: #403D3D;
+        margin-left: 7vw;
+        padding-right: 30vw;
+    }
+
 }
 
 /*-----------------------------MEDIAQUERY FOR WEBSITE 1600px------------------------------------*/
@@ -466,6 +541,5 @@ input[type=text] {
         left: 490px;
 
     }
-
 
 }

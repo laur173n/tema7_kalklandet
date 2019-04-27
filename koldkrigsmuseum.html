@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,11 +38,11 @@
 
         <main>
             <h1 class="overskrift"></h1>
-            <div id="undermenu">
+            <div class="undermenu">
                 <ul>
-                    <li><a href="koldkrigsmuseum-praktisk.html">Pratisk Info</a></li>
-                    <li><a href="koldkrigsmuseum-undervisning.html">Undervisning</a></li>
-                    <li><a href="koldkrigsmuseum-yderligere-info.html">Yderligere Viden</a></li>
+                    <li><a href="koldkrigsmuseum-praktisk.html">PRAKTISK INFO</a></li>
+                    <li><a href="koldkrigsmuseum-undervisning.html">UNDERVISNING</a></li>
+                    <li><a href="koldkrigsmuseum-yderligere-info.html">YDERLIGERE VIDEN</a></li>
                 </ul>
             </div>
             <div class="indhold">
@@ -101,7 +102,7 @@
 
             function visMenuStreger() {
                 document.querySelectorAll("#menu li").forEach(listepunkt => {
-                    let border = `<div class="border"></div>`;
+                    let border = `<div class="border_kold"></div>`;
                     listepunkt.insertAdjacentHTML("beforeend", border);
                 });
             }
@@ -143,4 +144,5 @@
     </div>
 
 </body>
+
 </html>
