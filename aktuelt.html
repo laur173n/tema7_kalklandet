@@ -46,7 +46,7 @@
     <template>
         <section class="nyhed">
             <div class="accordion">
-                <h2 class="overskrift"></h2>
+                <h2 class="overskrift_aktuelt"></h2>
                 <div class="dato"></div>
             </div>
 
@@ -150,7 +150,7 @@
 
                 nyheder.forEach(nyhed => {
                     let klon = temp.cloneNode(true).content;
-                    klon.querySelector(".overskrift").innerHTML = nyhed.title.rendered;
+                    klon.querySelector(".overskrift_aktuelt").innerHTML = nyhed.title.rendered;
                     klon.querySelector(".dato").innerHTML = nyhed.dato;
                     klon.querySelector(".tekst").innerHTML = nyhed.content.rendered;
                     // klon.querySelector("img").src = nyhed.billede.guid;

@@ -17,8 +17,15 @@ figure {
     pointer-events: none;
 }
 
-h1 {
-    width: 10vw;
+.indhold p {
+    line-height: 1.5rem;
+    margin: 4vw 4vw 2vw 4vw;
+}
+.indhold h4 {
+    margin: 4vw 4vw 4vw 4vw;
+}
+.indhold h3{
+    margin: 5vw 4vw 5vw 4vw;
 }
 
 h1,
@@ -26,6 +33,9 @@ h2,
 h3,
 h4 {
     font-family: 'Montserrat', sans-serif;
+}
+.overskrift {
+    text-align: center;
 }
 
 /*grid*/
@@ -200,16 +210,16 @@ p {
 
 /*ACCORDION*/
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #FAF8F8;
+    color: #403D3D;
     cursor: pointer;
-    padding: 15px;
+    padding: 20px 0 20px 0px;
     width: 100%;
-    border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    margin: 0;
 }
 
 .active,
@@ -230,13 +240,14 @@ p {
     /* Unicode character for "plus" sign (+) */
     font-size: 10px;
     float: right;
-    margin-left: 5px;
+    margin-right: 10px;
 }
 
 .accordion.active:after {
     content: "\2796";
 
 }
+
 
 /*** SEARCH ****/
 
@@ -422,6 +433,12 @@ input[type=text] {
         display: inline-block;
     }
 
+    .overskrift {
+    text-align: left;
+}
+
+
+
     /*    footer */
 
     .footer_udengrid {
@@ -476,6 +493,8 @@ input[type=text] {
         width: 30vw;
         top: 42vw;
         left: 60vw;
+        animation: pulse 2s ease-out infinite;
+        cursor: pointer;
     }
 
     .stevnsklint_lokation img {
@@ -483,6 +502,8 @@ input[type=text] {
         width: 30vw;
         top: 43vw;
         left: 48vw;
+        animation: pulse 2s ease-out infinite;
+        cursor: pointer;
     }
 
     .koldkrig_lokation img {
@@ -490,8 +511,23 @@ input[type=text] {
         width: 27vw;
         top: 42vw;
         left: 76vw;
+        animation: pulse 2s ease-out infinite;
+        cursor: pointer;
     }
 
+ @keyframes pulse {
+  0% {
+      transform: scale(0.97);
+  }
+
+  50% {
+
+      transform: scale(1);
+  }
+     100% {
+         transform: scale(0.97);
+     }
+}
 
     /*----------GRID STRUKTUR----------*/
 
