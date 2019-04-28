@@ -21,10 +21,12 @@ figure {
     line-height: 1.5rem;
     margin: 4vw 4vw 2vw 4vw;
 }
+
 .indhold h4 {
     margin: 4vw 4vw 4vw 4vw;
 }
-.indhold h3{
+
+.indhold h3 {
     margin: 5vw 4vw 5vw 4vw;
 }
 
@@ -34,6 +36,7 @@ h3,
 h4 {
     font-family: 'Montserrat', sans-serif;
 }
+
 .overskrift {
     text-align: center;
 }
@@ -208,6 +211,49 @@ p {
 }
 
 
+/*placering på kort*/
+
+.geomuseum_lokation img {
+    position: absolute;
+    width: 60vw;
+    top: 125vw;
+    left: 46vw;
+    animation: pulse 2s ease-out infinite;
+}
+
+.stevnsklint_lokation img {
+    position: absolute;
+    width: 60vw;
+    top: 127vw;
+    left: 22vw;
+    animation: pulse 2s ease-out infinite;
+}
+
+.koldkrig_lokation img {
+    position: absolute;
+    width: 57vw;
+    top: 121vw;
+    left: 63vw;
+    animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.97);
+    }
+
+    50% {
+
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.97);
+    }
+}
+
+
+
 /*ACCORDION*/
 .accordion {
     background-color: #FAF8F8;
@@ -302,6 +348,28 @@ input[type=text] {
     #undermenu ul {
         margin-top: 0;
     }
+
+
+    /*forside - placering på kort*/
+    .geomuseum_lokation img {
+        width: 60vw;
+        top: 120vw;
+        left: 46vw;
+
+    }
+
+    .stevnsklint_lokation img {
+        width: 60vw;
+        top: 122vw;
+        left: 22vw;
+    }
+
+    .koldkrig_lokation img {
+        width: 57vw;
+        top: 117vw;
+        left: 63vw;
+    }
+
 
 }
 
@@ -434,8 +502,8 @@ input[type=text] {
     }
 
     .overskrift {
-    text-align: left;
-}
+        text-align: left;
+    }
 
 
 
@@ -488,46 +556,30 @@ input[type=text] {
         color: #F45D2F;
     }
 
+    /*    placering på kort  */
+
     .geomuseum_lokation img {
-        position: absolute;
         width: 30vw;
         top: 42vw;
         left: 60vw;
-        animation: pulse 2s ease-out infinite;
         cursor: pointer;
     }
 
     .stevnsklint_lokation img {
-        position: absolute;
         width: 30vw;
         top: 43vw;
         left: 48vw;
-        animation: pulse 2s ease-out infinite;
         cursor: pointer;
     }
 
     .koldkrig_lokation img {
-        position: absolute;
         width: 27vw;
         top: 42vw;
         left: 76vw;
-        animation: pulse 2s ease-out infinite;
         cursor: pointer;
     }
 
- @keyframes pulse {
-  0% {
-      transform: scale(0.97);
-  }
 
-  50% {
-
-      transform: scale(1);
-  }
-     100% {
-         transform: scale(0.97);
-     }
-}
 
     /*----------GRID STRUKTUR----------*/
 
