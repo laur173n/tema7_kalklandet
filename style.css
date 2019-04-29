@@ -230,8 +230,6 @@ p {
     color: #1283AB;
 }
 
-
-
 .brodtekst_footer {
     color: #403D3D;
 }
@@ -343,7 +341,8 @@ figcaption p {
 
 .active,
 .accordion:hover {
-    background-color: #ccc;
+    background-color: #ffffff;
+    color: #403D3D;
 }
 
 .panel {
@@ -355,16 +354,19 @@ figcaption p {
 }
 
 .accordion:after {
-    content: '\02795';
     /* Unicode character for "plus" sign (+) */
-    font-size: 10px;
-    float: right;
-    margin-right: 10px;
+    font-size: 20px;
 }
 
-.accordion.active:after {
-    content: "\2796";
+.accordion.active:after {}
 
+.dato {
+    font-family: 'Montserrat', sans-serif;
+    color: #f45d2f;
+}
+
+.dato:hover {
+    color: #ffffff;
 }
 
 
@@ -386,14 +388,6 @@ input[type=text] {
     font-size: 13px;
     border: none;
 }
-
-/*OM OS*/
-
-.indhold_omos {
-    padding: 0vw 4vw;
-    line-height: 1.5rem;
-}
-
 
 /*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/
 
@@ -482,19 +476,6 @@ input[type=text] {
     .wp-image-192 {
         width: 70vw;
     }
-
-
-    /**om os **/
-
-    .indhold_omos {
-        padding: 0vw 5vw;
-    }
-
-    .indhold_omos {
-        padding-right: 9vw;
-    }
-
-
 }
 
 
@@ -638,29 +619,6 @@ input[type=text] {
 
     .overskrift {
         text-align: left;
-    }
-
-
-    /**om os **/
-
-    .indhold_omos {
-        padding: 0;
-    }
-
-    .indhold_omos h1 {
-        padding-left: 1vw;
-        border-bottom: 2px solid black;
-    }
-
-    .indhold_omos p {
-        margin-left: 7vw;
-        padding-right: 30vw;
-    }
-
-    .indhold_omos h3 {
-        margin-left: 7vw;
-        padding-top: 2vw;
-        padding-right: 30vw;
     }
 
 
@@ -813,6 +771,11 @@ input[type=text] {
         margin-left: 7vw;
         padding-right: 30vw;
     }
+
+    .omos .indhold p {
+        padding-right: 0vw;
+    }
+
 
 
     /*stevns klint oversigt over klinten*/
