@@ -96,6 +96,7 @@ footer {
     margin-top: 35vw;
     margin-left: -95vw;
 }
+
 .info {
     margin-top: 5vw;
 }
@@ -213,6 +214,10 @@ p {
     width: 10vw;
 }
 
+.overskrift_footer {
+    color: #F45D2F;
+}
+
 .footer_geomuseum .overskrift_footer {
     color: #26A6A1;
 }
@@ -224,6 +229,8 @@ p {
 .footer_stevns .overskrift_footer {
     color: #1283AB;
 }
+
+
 
 .brodtekst_footer {
     color: #403D3D;
@@ -384,6 +391,7 @@ input[type=text] {
 
 .indhold_omos {
     padding: 0vw 4vw;
+    line-height: 1.5rem;
 }
 
 
@@ -469,17 +477,26 @@ input[type=text] {
     }
 
 
+
+    /**stevns klint oversigt over klinten**/
+    .wp-image-192 {
+        width: 70vw;
+    }
+
+
+    /**om os **/
+
+    .indhold_omos {
+        padding: 0vw 5vw;
+    }
+
+    .indhold_omos {
+        padding-right: 9vw;
+    }
+
+
 }
 
-/**om os **/
-
-.indhold_omos {
-    padding: 0vw 5vw;
-}
-
-.indhold_omos {
-    padding-right: 9vw;
-}
 
 
 
@@ -647,7 +664,6 @@ input[type=text] {
     }
 
 
-
     /*    footer */
 
     .footer_udengrid {
@@ -796,6 +812,12 @@ input[type=text] {
         color: #403D3D;
         margin-left: 7vw;
         padding-right: 30vw;
+    }
+
+
+    /*stevns klint oversigt over klinten*/
+    .indhold .wp-image-192 {
+        width: 30vw;
     }
 
 }
