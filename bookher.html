@@ -23,7 +23,7 @@
             <nav id="menu" class="hide">
                 <ul>
                     <li><a href="koldkrigsmuseum.html">KOLDKRIGSMUSEUM STEVNSFORT</a></li>
-                    <li><a class="current" href="stevnsklint.html">STEVNS KLINT</a></li>
+                    <li><a href="stevnsklint.html">STEVNS KLINT</a></li>
                     <li><a href="geomuseum.html">GEOMUSEUM FAXE</a></li>
                     <li><a href="aktuelt.html">AKTUELT</a></li>
                     <li><a href="om.html">OM OS</a></li>
@@ -41,15 +41,7 @@
 
         <main>
             <h1 class="overskrift"></h1>
-            <div class="undermenu">
-                <ul>
-                    <li><a href="stevnsklint-oversigt.html">OVERSIGT OVER KLINTEN</a></li>
-                    <li><a href="stevnsklint-praktisk.html">PRAKTISK INFO</a></li>
-                    <li><a href="stevnsklint-undervisning.html">UNDERVISNING</a></li>
-                    <li><a href="stevnsklint-yderligere-info.html">YDERLIGERE VIDEN</a></li>
 
-                </ul>
-            </div>
             <div class="indhold">
             </div>
         </main>
@@ -134,7 +126,7 @@
 
             function start() {
                 async function getJson() {
-                    let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/32"
+                    let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/240"
                     let jsonData = await fetch(url);
                     indhold = await jsonData.json();
                     visIndhold();
