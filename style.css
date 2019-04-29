@@ -229,23 +229,23 @@ p {
 
 .geomuseum_lokation img {
     position: absolute;
-    width: 60vw;
-    top: 125vw;
-    left: 46vw;
+    width: 32vw;
+    top: 126vw;
+    left: 50vw;
     animation: pulse 2s ease-out infinite;
 }
 
 .stevnsklint_lokation img {
     position: absolute;
-    width: 60vw;
+    width: 26vw;
     top: 127vw;
-    left: 22vw;
+    left: 25vw;
     animation: pulse 2s ease-out infinite;
 }
 
 .koldkrig_lokation img {
     position: absolute;
-    width: 57vw;
+    width: 54vw;
     top: 121vw;
     left: 63vw;
     animation: pulse 2s ease-out infinite;
@@ -273,7 +273,7 @@ figcaption {
     font-size: 10px;
     padding: 0.6vw;
     padding-left: 0.5rem;
-    width: 21vw;
+    width: 23vw;
     -webkit-transition: opacity 0.3s ease-out;
     -moz-transition: opacity 0.3s ease-out;
     -ms-transition: opacity 0.3s ease-out;
@@ -287,20 +287,20 @@ figcaption p {
 }
 
 #geomuseum_lokation figcaption {
-    left: 55vw;
+    left: 57vw;
     top: 132vw;
     background-color: #26A6A1;
 }
 
 #stevnsklint_lokation figcaption {
-    left: 23vw;
-    top: 108vw;
+    left: 19vw;
+    top: 110vw;
     background-color: #1283AB;
 }
 
 #koldkrig_lokation figcaption {
-    left: 74vw;
-    top: 100vw;
+    left: 70vw;
+    top: 104vw;
     background-color: #3A7287;
 }
 
@@ -404,20 +404,20 @@ input[type=text] {
 
     /*forside - placering på kort*/
     .geomuseum_lokation img {
-        width: 60vw;
-        top: 121vw;
+        width: 32vw;
+        top: 122vw;
         left: 46vw;
 
     }
 
     .stevnsklint_lokation img {
-        width: 60vw;
+        width: 25vw;
         top: 122vw;
-        left: 22vw;
+        left: 23vw;
     }
 
     .koldkrig_lokation img {
-        width: 57vw;
+        width: 54vw;
         top: 117vw;
         left: 63vw;
     }
@@ -432,20 +432,20 @@ input[type=text] {
     }
 
     #geomuseum_lokation figcaption {
-        left: 55vw;
+        left: 53vw;
         top: 128vw;
         background-color: #26A6A1;
     }
 
     #stevnsklint_lokation figcaption {
-        left: 23vw;
+        left: 20vw;
         top: 108vw;
         background-color: #1283AB;
     }
 
     #koldkrig_lokation figcaption {
-        left: 74vw;
-        top: 100vw;
+        left: 72vw;
+        top: 103vw;
         background-color: #3A7287;
     }
 
@@ -539,6 +539,7 @@ input[type=text] {
 
     .search-container {
         grid-area: search;
+        z-index: -10;
     }
 
     .search_pic img {
