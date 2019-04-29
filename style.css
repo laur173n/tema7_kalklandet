@@ -252,6 +252,41 @@ p {
     }
 }
 
+/*pop op vidue på kort*/
+
+figcaption {
+    position: absolute;
+    background-color: white;
+    font-size: 15px;
+    padding: 0.3vw;
+    width: 10vw;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+
+#geomuseum_lokation figcaption {
+    left: 65vw;
+    top: 36vw;
+    z-index: 6;
+}
+
+#stevnsklint_lokation figcaption {
+    left: 49vw;
+    top: 36vw;
+    z-index: 6;
+}
+
+#koldkrig_lokation figcaption {
+    left: 81vw;
+    top: 36vw;
+    background-color: #e3dcd2;
+    z-index: 6;
+}
+
 
 
 /*ACCORDION*/
@@ -450,7 +485,6 @@ input[type=text] {
 
     .search-container {
         grid-area: search;
-        z-index: -999;
     }
 
     .search_pic img {
@@ -581,19 +615,7 @@ input[type=text] {
 
     /*pop op vidue på kort*/
 
-    figcaption {
-        position: absolute;
-        background-color: white;
-        font-size: 15px;
-        padding: 0.3vw;
-        width: 10vw;
-        opacity: 0;
-        -webkit-transition: opacity 0.3s ease-out;
-        -moz-transition: opacity 0.3s ease-out;
-        -ms-transition: opacity 0.3s ease-out;
-        -o-transition: opacity 0.3s ease-out;
-        transition: opacity 0.3s ease-out;
-    }
+
 
     figure:hover figcaption {
         opacity: 1;
@@ -601,7 +623,7 @@ input[type=text] {
 
 
     .geomuseum_lokation figcaption {
-         left: 65vw;
+        left: 65vw;
         top: 36vw;
     }
 

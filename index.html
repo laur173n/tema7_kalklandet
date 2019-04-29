@@ -47,26 +47,25 @@
             </picture>
 
 
-            <figure class="geomuseum_lokation">
+            <figure id="geomuseum_lokation" class="geomuseum_lokation lokation">
                <img src="1x/tag_f_geomuseum.png" alt="geomuseum lokation">
-               <figcaption>
+               <figcaption class="lokation_popup">
                    <p>Adresse: <br> Østervej 2<br>4640 Faxe</p>
                </figcaption>
-
-
             </figure>
 
 
-            <figure class="stevnsklint_lokation">
+            <figure id="stevnsklint_lokation" class="stevnsklint_lokation lokation">
                 <img src="1x/tag_f_stevnsklint.png" alt="stevnsklint lokation">
-                <figcaption>
+                <figcaption class="lokation_popup">
                     <p>Adresse: <br> Rådhusvej 2 <br> 4640 Faxe</p>
                 </figcaption>
             </figure>
 
-            <figure class="koldkrig_lokation">
+
+            <figure id="koldkrig_lokation" class="koldkrig_lokation lokation">
                 <img src="1x/tag_f_kkmstevnsfort.png" alt="koldkrigsmuseum lokation">
-                <figcaption>
+                <figcaption class="lokation_popup">
                     <p>Adresse: <br> Korsnæbsvej 60 <br> 4673 Rødvig</p>
                 </figcaption>
             </figure>
@@ -117,14 +116,49 @@
             let indhold;
 
             function sidenVises() {
-                console.log("siden vises");
+                //console.log("siden vises");
                 // registrer klik på menuknap
                 document.querySelector(".burger-button").addEventListener("click", toggleMenu);
 
-                start();
+                //pop up vindue
+                //document.querySelector(".lokation_popup").classList.add("hide");
+                document.querySelectorAll(".lokation_popup").forEach( e=>{
+                    e.classList.add("hide");
+                })
+
+
+                 document.querySelector("#koldkrig_lokation").addEventListener("click", e=>{
+
+                     console.log(e.target.parentElement.id);
+                     let valgt = e.target.parentElement.id;
+
+                     document.querySelector("#"+valgt + " figcaption").classList.toggle("hide");
+
+                 })
+
+                document.querySelector("#stevnsklint_lokation").addEventListener("click", e=>{
+
+                     console.log(e.target.parentElement.id);
+                     let valgt = e.target.parentElement.id;
+
+                     document.querySelector("#"+valgt + " figcaption").classList.toggle("hide");
+
+                 })
+
+                document.querySelector("#geomuseum_lokation").addEventListener("click", e=>{
+
+                     console.log(e.target.parentElement.id);
+                     let valgt = e.target.parentElement.id;
+
+                     document.querySelector("#"+valgt + " figcaption").classList.toggle("hide");
+
+                 })
+
+
                 visMenuStreger();
 
             }
+
 
             function visMenuStreger() {
                 document.querySelectorAll("#menu li").forEach(listepunkt => {
@@ -151,21 +185,6 @@
                 }
             }
 
-
-            function start() {
-                async function getJson() {
-                    let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/8"
-                    let jsonData = await fetch(url);
-                    indhold = await jsonData.json();
-                    visIndhold();
-                }
-
-                function visIndhold() {
-                    document.querySelector(".overskrift").textContent = indhold.title.rendered;
-                    document.querySelector(".indhold").innerHTML = indhold.content.rendered;
-                }
-                getJson();
-            }
         </script>
     </div>
 
