@@ -92,9 +92,10 @@ footer {
 }
 
 .infotext {
-    width: 80vw;
+    width: 90vw;
     margin-top: 35vw;
     margin-left: -95vw;
+    margin-right: -30vw;
 }
 
 .info {
@@ -387,6 +388,20 @@ input[type=text] {
     margin-top: 5px;
     font-size: 13px;
     border: none;
+}
+
+
+/*BOOK HER SIDE*/
+
+.info .tekst h2 {
+    color: #F45D2F;
+    text-decoration: none;
+}
+
+
+.info p,
+.info h2 {
+    color: #403D3D;
 }
 
 /*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/

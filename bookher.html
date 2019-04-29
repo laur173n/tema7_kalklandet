@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stevns klint</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <a href="index.html">
+                <div class="logo"><img src="img/logo_stevnsklint.png" alt="logo"></div>
+            </a>
+
+            <div class="burger-button">
+                <img src="img/burgermenu.png" alt="menu">
+            </div>
+            <nav id="menu" class="hide">
+                <ul>
+                    <li><a href="koldkrigsmuseum.html">KOLDKRIGSMUSEUM STEVNSFORT</a></li>
+                    <li><a class="current" href="stevnsklint.html">STEVNS KLINT</a></li>
+                    <li><a href="geomuseum.html">GEOMUSEUM FAXE</a></li>
+                    <li><a href="aktuelt.html">AKTUELT</a></li>
+                    <li><a href="om.html">OM OS</a></li>
+                </ul>
+            </nav>
+            <div class="search-container sog_skjul">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="SØG" name="search">
+                </form>
+                <div class="search_pic"><img src="img/search.png" alt=""></div>
+            </div>
+
+        </header>
+
+
+        <main>
+            <h1 class="overskrift"></h1>
+            <div class="undermenu">
+                <ul>
+                    <li><a href="stevnsklint-oversigt.html">OVERSIGT OVER KLINTEN</a></li>
+                    <li><a href="stevnsklint-praktisk.html">PRAKTISK INFO</a></li>
+                    <li><a href="stevnsklint-undervisning.html">UNDERVISNING</a></li>
+                    <li><a href="stevnsklint-yderligere-info.html">YDERLIGERE VIDEN</a></li>
+
+                </ul>
+            </div>
+            <div class="indhold">
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer_stevns">
+                <div class="footer_udengrid">
+                    <div class="overstebox_footer">
+                        <div class="adresse_footer">
+                            <p class="overskrift_footer">ADRESSE</p>
+                            <p class="brodtekst_footer">Østsjællands <br> Museum</p>
+                            <p class="brodtekst_footer">Rådhusvej 2</p>
+                            <p class="brodtekst_footer">4640 Faxe</p>
+                        </div>
+
+                        <div class="kontakt_footer">
+                            <p class="overskrift_footer">KONTAKT</p>
+                            <p class="telefon_footer">+45 56502806</p>
+                            <p class="brodtekst_footer"> Telefonen er åben mandag til fredag <br> fra kl. 9 til 15.</p>
+                        </div>
+                    </div>
+
+                    <div class="some_footer">
+                        <p class="overskrift_footer">FØLG OS PÅ</p>
+                        <div class="somewrapper_footer">
+                            <a href="https://www.facebook.com/stevnsklint/"><img src="1x/stevnsklint_fb.png" alt="facebook"></a>
+                            <a href="https://www.instagram.com/oestsjaellandsmuseum/?hl=da"><img src="1x/stevnsklint_insta.png" alt="instagram"></a>
+                            <a href="https://twitter.com/hashtag/kalklandet?src=hash"><img src="1x/stevnsklint_tw.png" alt="twitter"></a>
+                            <img src="1x/stevnsklint_sc.png" alt="snapchat">
+                            <img src="1x/stevnsklint_yt.png" alt="youtube">
+                        </div>
+                    </div>
+
+                    <div class="andet_footer">
+                        <p class="overskrift_footer">SPROG</p>
+                        <p class="overskrift_footer">PRESSE</p>
+                        <p class="overskrift_footer">FONDE OG SPONSORATER</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", sidenVises);
+
+            let indhold;
+
+            function sidenVises() {
+                console.log("siden vises");
+                // registrer klik på menuknap
+                document.querySelector(".burger-button").addEventListener("click", toggleMenu);
+
+                start();
+                visMenuStreger();
+
+            }
+
+            function visMenuStreger() {
+                document.querySelectorAll("#menu li").forEach(listepunkt => {
+                    let border = `<div class="border_stevns"></div>`;
+                    listepunkt.insertAdjacentHTML("beforeend", border);
+                });
+            }
+
+
+
+            function toggleMenu() {
+                console.log("Toggle menu");
+                document.querySelector("#menu").classList.toggle("hide");
+                document.querySelector("header").classList.toggle("burgermenu_fix");
+
+                let erSkjult = document.querySelector("#menu").classList.contains("hide");
+
+                if (erSkjult == true) {
+                    //menuen er skjult - ændr menuknap til lll
+                    document.querySelector(".burger-button img").src = "img/burgermenu.png";
+                } else {
+                    //menuen er nu vist - ændr menuknap til X
+                    document.querySelector(".burger-button img").src = "img/cancel.png";
+                }
+            }
+
+            function start() {
+                async function getJson() {
+                    let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/32"
+                    let jsonData = await fetch(url);
+                    indhold = await jsonData.json();
+                    visIndhold();
+                }
+
+                function visIndhold() {
+                    document.querySelector(".overskrift").textContent = indhold.title.rendered;
+                    document.querySelector(".indhold").innerHTML = indhold.content.rendered;
+                }
+                getJson();
+            }
+        </script>
+    </div>
+</body>
+
+</html>
