@@ -91,6 +91,15 @@ footer {
     width: 45vw;
 }
 
+.infotext {
+    z-index: 100;
+    width: 80vw;
+    margin-top: 32vw;
+    margin-left: -95vw;
+}
+
+.indhold {}
+
 
 /*menu, burgermenu, undermenu */
 .menu {
