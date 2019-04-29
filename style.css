@@ -54,6 +54,7 @@ body {
     color: black;
 
 }
+
 .undermenu a.current {
     font-weight: bolder;
     color: black;
@@ -269,11 +270,10 @@ p {
 
 figcaption {
     position: absolute;
-    background-color: white;
-    font-size: 15px;
-    padding: 0.3vw;
-    width: 10vw;
-    opacity: 0;
+    font-size: 10px;
+    padding: 0.6vw;
+    padding-left: 0.5rem;
+    width: 21vw;
     -webkit-transition: opacity 0.3s ease-out;
     -moz-transition: opacity 0.3s ease-out;
     -ms-transition: opacity 0.3s ease-out;
@@ -281,23 +281,27 @@ figcaption {
     transition: opacity 0.3s ease-out;
 }
 
+figcaption p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
 #geomuseum_lokation figcaption {
-    left: 65vw;
-    top: 36vw;
-    z-index: 6;
+    left: 55vw;
+    top: 132vw;
+    background-color: #26A6A1;
 }
 
 #stevnsklint_lokation figcaption {
-    left: 49vw;
-    top: 36vw;
-    z-index: 6;
+    left: 23vw;
+    top: 108vw;
+    background-color: #1283AB;
 }
 
 #koldkrig_lokation figcaption {
-    left: 81vw;
-    top: 36vw;
-    background-color: #e3dcd2;
-    z-index: 6;
+    left: 74vw;
+    top: 100vw;
+    background-color: #3A7287;
 }
 
 
@@ -401,7 +405,7 @@ input[type=text] {
     /*forside - placering på kort*/
     .geomuseum_lokation img {
         width: 60vw;
-        top: 120vw;
+        top: 121vw;
         left: 46vw;
 
     }
@@ -418,6 +422,33 @@ input[type=text] {
         left: 63vw;
     }
 
+    /*pop up vinduer*/
+
+    figcaption {
+        font-size: 18px;
+        padding: 0.5vw;
+        width: 20vw;
+        padding-left: 1rem;
+    }
+
+    #geomuseum_lokation figcaption {
+        left: 55vw;
+        top: 128vw;
+        background-color: #26A6A1;
+    }
+
+    #stevnsklint_lokation figcaption {
+        left: 23vw;
+        top: 108vw;
+        background-color: #1283AB;
+    }
+
+    #koldkrig_lokation figcaption {
+        left: 74vw;
+        top: 100vw;
+        background-color: #3A7287;
+    }
+
 
 }
 
@@ -427,14 +458,15 @@ input[type=text] {
 
 @media only screen and (min-width: 1270px) {
 
-      #menu li a:hover {
-    font-weight: bold;
-    color: black;
-}
+    #menu li a:hover {
+        font-weight: bold;
+        color: black;
+    }
+
     .undermenu li a:hover {
-    font-weight: bold;
-    color: black;
-}
+        font-weight: bold;
+        color: black;
+    }
 
     .logo img {
         width: 18vw;
@@ -638,26 +670,33 @@ input[type=text] {
     /*pop op vidue på kort*/
 
 
+    figcaption {
+        opacity: 0;
+        font-size: 18px;
+        padding: 0.3vw;
+        padding-left: 1vw;
+        width: 12vw;
+
+    }
 
     figure:hover figcaption {
         opacity: 1;
     }
 
 
-    .geomuseum_lokation figcaption {
-        left: 65vw;
-        top: 36vw;
+    #geomuseum_lokation figcaption {
+        left: 64vw;
+        top: 34vw;
     }
 
-    .stevnsklint_lokation figcaption {
-        left: 49vw;
-        top: 36vw;
+    #stevnsklint_lokation figcaption {
+        left: 45vw;
+        top: 35vw;
     }
 
-    .koldkrig_lokation figcaption {
-        left: 81vw;
-        top: 36vw;
-        background-color: #e3dcd2;
+    #koldkrig_lokation figcaption {
+        left: 80vw;
+        top: 34vw;
     }
 
 
@@ -717,5 +756,6 @@ input[type=text] {
         left: 490px;
 
     }
+
 
 }
