@@ -648,22 +648,22 @@ input[type=text] {
     /*    placering på kort  */
 
     .geomuseum_lokation img {
-        width: 30vw;
-        top: 42vw;
-        left: 60vw;
+        width: 18vw;
+        top: 42.5vw;
+        left: 59vw;
         cursor: pointer;
     }
 
     .stevnsklint_lokation img {
-        width: 30vw;
+        width: 14vw;
         top: 43vw;
-        left: 48vw;
+        left: 46vw;
         cursor: pointer;
     }
 
     .koldkrig_lokation img {
-        width: 27vw;
-        top: 42vw;
+        width: 30vw;
+        top: 40vw;
         left: 76vw;
         cursor: pointer;
     }
@@ -686,18 +686,18 @@ input[type=text] {
 
 
     #geomuseum_lokation figcaption {
-        left: 64vw;
+        left: 62vw;
         top: 34vw;
     }
 
     #stevnsklint_lokation figcaption {
-        left: 45vw;
+        left: 43vw;
         top: 35vw;
     }
 
     #koldkrig_lokation figcaption {
         left: 80vw;
-        top: 34vw;
+        top: 32vw;
     }
 
 
