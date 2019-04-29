@@ -367,6 +367,11 @@ input[type=text] {
 }
 
 
+/***om os **/
+
+.overskrift_omos {
+    padding-left: 3vw;
+}
 
 /*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/
 
@@ -449,6 +454,11 @@ input[type=text] {
         background-color: #3A7287;
     }
 
+
+    .overskrift_omos {
+        padding-left: 4vw;
+        border-bottom: 1px solid black;
+    }
 
 }
 
@@ -700,6 +710,11 @@ input[type=text] {
         top: 32vw;
     }
 
+    .overskrift_omos {
+        padding-left: 4vw;
+        border-bottom: 1px solid black;
+    }
+
 
     /*----------GRID STRUKTUR----------*/
 
@@ -745,6 +760,7 @@ input[type=text] {
         margin-left: 7vw;
         padding-right: 30vw;
     }
+
 
 }
 
