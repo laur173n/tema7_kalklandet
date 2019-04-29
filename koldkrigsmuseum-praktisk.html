@@ -54,8 +54,8 @@
 
         <template>
             <section class="info">
-                <h2 class="overskrift accordion"></h2>
-                <div class="tekst panel"></div>
+                <h2 class="overskrift_praktisk"></h2>
+                <div class="tekst"></div>
             </section>
         </template>
 
@@ -158,11 +158,11 @@
                 let temp = document.querySelector("template");
                 indhold.forEach(indhold => {
                     let klon = temp.cloneNode(true).content;
-                    klon.querySelector(".overskrift").innerHTML = indhold.title.rendered;
+                    klon.querySelector(".overskrift_praktisk").innerHTML = indhold.title.rendered;
                     klon.querySelector(".tekst").innerHTML = indhold.content.rendered;
                     dest.appendChild(klon);
                 })
-                lavAccordion();
+                //lavAccordion();
             }
 
 
@@ -170,7 +170,7 @@
             function lavAccordion() {
                 //accordion
                 console.log("test");
-                var acc = document.getElementsByClassName("overskrift");
+                var acc = document.getElementsByClassName("overskrift_praktisk");
                 var i;
 
                 for (i = 0; i < acc.length; i++) {

@@ -52,7 +52,7 @@
 
         <template>
             <section class="info">
-                <h2 class="overskrift"></h2>
+                <h2 class="overskrift_praktisk"></h2>
                 <div class="tekst"></div>
             </section>
         </template>
@@ -156,11 +156,11 @@
                 let temp = document.querySelector("template");
                 indhold.forEach(indhold => {
                     let klon = temp.cloneNode(true).content;
-                    klon.querySelector(".overskrift").innerHTML = indhold.title.rendered;
+                    klon.querySelector(".overskrift_praktisk").innerHTML = indhold.title.rendered;
                     klon.querySelector(".tekst").innerHTML = indhold.content.rendered;
                     dest.appendChild(klon);
                 })
-                lavAccordion();
+                //lavAccordion();
             }
 
 

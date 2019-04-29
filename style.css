@@ -92,10 +92,12 @@ footer {
 }
 
 .infotext {
-    z-index: 100;
     width: 80vw;
-    margin-top: 32vw;
+    margin-top: 35vw;
     margin-left: -95vw;
+}
+.info {
+    margin-top: 5vw;
 }
 
 .indhold {}
@@ -329,6 +331,7 @@ figcaption p {
     font-size: 15px;
     transition: 0.4s;
     margin: 0;
+
 }
 
 .active,
@@ -619,6 +622,7 @@ input[type=text] {
     .overskrift {
         text-align: left;
     }
+
 
     /**om os **/
 
