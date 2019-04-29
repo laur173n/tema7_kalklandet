@@ -39,7 +39,7 @@
 
         <main>
             <h1 class="overskrift_omos"></h1>
-            <div class="indhold_omos">
+            <div class="indhold">
             </div>
         </main>
 
@@ -104,7 +104,7 @@
         <script>
             document.addEventListener("DOMContentLoaded", sidenVises);
 
-            let indhold_omos;
+            let indhold;
 
             function sidenVises() {
                 console.log("siden vises");
@@ -145,13 +145,13 @@
                 async function getJson() {
                     let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp//wp-json/wp/v2/pages/30"
                     let jsonData = await fetch(url);
-                    indhold_omos = await jsonData.json();
+                    indhold = await jsonData.json();
                     visIndhold();
                 }
 
                 function visIndhold() {
-                    document.querySelector(".overskrift_omos").textContent = indhold_omos.title.rendered;
-                    document.querySelector(".indhold_omos").innerHTML = indhold_omos.content.rendered;
+                    document.querySelector(".overskrift_omos").textContent = indhold.title.rendered;
+                    document.querySelector(".indhold").innerHTML = indhold.content.rendered;
                 }
                 getJson();
             }
