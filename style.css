@@ -119,7 +119,7 @@ footer {
     position: absolute;
     top: 70px;
     height: 160vh;
-    width: 100vw;
+    width: 102vw;
     margin: -2vw;
 }
 
@@ -548,6 +548,8 @@ input[type=text] {
         margin: 0;
         width: initial;
         height: 0;
+        width: 100vw;
+
     }
 
 
