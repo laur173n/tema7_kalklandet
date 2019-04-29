@@ -1,6 +1,7 @@
 /*OVERALL*/
 
 .container {
+    position: relative;
     display: grid;
     grid-template-areas:
         "header"
@@ -50,15 +51,13 @@ body {
 
 
 #menu a.current {
-    font-weight: bolder;
-    color: black;
+    font-weight: 600;
+
 
 }
 
 .undermenu a.current {
-    font-weight: bolder;
-    color: black;
-
+    font-weight: 600;
 }
 
 
@@ -243,6 +242,27 @@ p {
     z-index: -1;
 }
 
+.velkommen_tekst {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    top: 30vw;
+    left: 28vw;
+    color: #F45D2F;
+}
+
+.find_adresser {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    top: 40vw;
+    left: 16vw;
+    color: #403D3D;
+    text-align: center;
+}
+
 
 /*placering på kort*/
 
@@ -367,7 +387,7 @@ figcaption p {
 }
 
 .dato:hover {
-    color: #ffffff;
+    color: white;
 }
 
 
@@ -501,13 +521,11 @@ input[type=text] {
 @media only screen and (min-width: 1270px) {
 
     #menu li a:hover {
-        font-weight: bold;
-        color: black;
+        font-weight: 600;
     }
 
     .undermenu li a:hover {
-        font-weight: bold;
-        color: black;
+        font-weight: 600;
     }
 
     .logo img {
@@ -707,6 +725,22 @@ input[type=text] {
         top: 40vw;
         left: 76vw;
         cursor: pointer;
+    }
+
+    .velkommen_tekst {
+        font-weight: 700;
+        font-size: 2.5rem;
+        top: 13vw;
+        left: 38vw;
+        color: #F45D2F;
+    }
+
+    .find_adresser {
+        font-weight: 600;
+        font-size: 1rem;
+        top: 18vw;
+        left: 38.5vw;
+
     }
 
     /*pop op vidue på kort*/
