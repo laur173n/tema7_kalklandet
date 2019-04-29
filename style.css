@@ -828,8 +828,9 @@ input[type=text] {
 
 
     /*stevns klint oversigt over klinten*/
-    .indhold .wp-image-192 {
-        width: 30vw;
+    .indhold .wp-image-238{
+        width: 40vw;
+        margin-bottom: 0;
     }
 
 }
