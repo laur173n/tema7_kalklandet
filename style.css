@@ -377,6 +377,11 @@ input[type=text] {
     border: none;
 }
 
+/*OM OS*/
+
+.indhold_omos {
+    padding: 0vw 4vw;
+}
 
 
 /*-----------------------------MEDIAQUERY FOR IPAD------------------------------------*/
@@ -461,6 +466,16 @@ input[type=text] {
     }
 
 
+}
+
+/**om os **/
+
+.indhold_omos {
+    padding: 0vw 5vw;
+}
+
+.indhold_omos {
+    padding-right: 9vw;
 }
 
 
@@ -603,6 +618,28 @@ input[type=text] {
 
     .overskrift {
         text-align: left;
+    }
+
+    /**om os **/
+
+    .indhold_omos {
+        padding: 0;
+    }
+
+    .indhold_omos h1 {
+        padding-left: 1vw;
+        border-bottom: 2px solid black;
+    }
+
+    .indhold_omos p {
+        margin-left: 7vw;
+        padding-right: 30vw;
+    }
+
+    .indhold_omos h3 {
+        margin-left: 7vw;
+        padding-top: 2vw;
+        padding-right: 30vw;
     }
 
 
