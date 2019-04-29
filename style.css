@@ -48,6 +48,19 @@ body {
     margin: 0;
 }
 
+
+#menu a.current {
+    font-weight: bolder;
+    color: black;
+
+}
+.undermenu a.current {
+    font-weight: bolder;
+    color: black;
+
+}
+
+
 header {
     grid-area: header;
     display: grid;
@@ -378,6 +391,15 @@ input[type=text] {
 /*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
 
 @media only screen and (min-width: 1270px) {
+
+      #menu li a:hover {
+    font-weight: bold;
+    color: black;
+}
+    .undermenu li a:hover {
+    font-weight: bold;
+    color: black;
+}
 
     .logo img {
         width: 18vw;
