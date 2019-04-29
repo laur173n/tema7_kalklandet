@@ -239,7 +239,7 @@ p {
 .splash img {
     width: 100vw;
     position: relative;
-    z-index: -1;
+    z-index: -10;
 }
 
 .velkommen_tekst {
@@ -250,10 +250,12 @@ p {
     top: 30vw;
     left: 28vw;
     color: #F45D2F;
+    z-index: -2;
 }
 
 .find_adresser {
     position: absolute;
+    z-index: -1;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 1rem;
@@ -272,6 +274,7 @@ p {
     top: 126vw;
     left: 50vw;
     animation: pulse 2s ease-out infinite;
+    z-index: -4;
 }
 
 .stevnsklint_lokation img {
@@ -280,6 +283,7 @@ p {
     top: 127vw;
     left: 25vw;
     animation: pulse 2s ease-out infinite;
+    z-index: -5;
 }
 
 .koldkrig_lokation img {
@@ -288,6 +292,8 @@ p {
     top: 121vw;
     left: 63vw;
     animation: pulse 2s ease-out infinite;
+    z-index: -6;
+
 }
 
 @keyframes pulse {
@@ -828,9 +834,8 @@ input[type=text] {
 
 
     /*stevns klint oversigt over klinten*/
-    .indhold .wp-image-238{
-        width: 40vw;
-        margin-bottom: 0;
+    .indhold .wp-image-192 {
+        width: 30vw;
     }
 
 }
