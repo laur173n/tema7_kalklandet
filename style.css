@@ -39,14 +39,6 @@ h4 {
     color: #403D3D;
 }
 
-.kkmundervisning h3 {
-    color: #3A7287;
-}
-
-.geoundervisning h3 {
-    color: #26A6A1;
-}
-
 .overskrift {
     text-align: center;
 }
@@ -881,12 +873,6 @@ input[type=text] {
         padding-right: 30vw;
     }
 
-    .infotext p {
-        grid-area: tekst;
-        color: #403D3D;
-        padding-right: 30vw;
-    }
-
     .indhold h3 {
         margin: 3vw 7vw 1vw 7vw;
     }
@@ -902,8 +888,8 @@ input[type=text] {
 
 
     /*stevns klint oversigt over klinten*/
-    .indhold .wp-image-279 {
-        width: 50vw;
+    .indhold .wp-image-192 {
+        width: 30vw;
     }
 
 }

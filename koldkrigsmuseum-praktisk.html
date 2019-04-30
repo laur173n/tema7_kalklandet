@@ -112,6 +112,7 @@
                 getJson();
                 visMenuStreger();
 
+
             }
 
             function visMenuStreger() {
@@ -162,10 +163,14 @@
                     klon.querySelector(".tekst").innerHTML = indhold.content.rendered;
                     dest.appendChild(klon);
                 })
+                document.querySelector(".info .tekst h2").addEventListener("click", visBookSide);
                 //lavAccordion();
             }
 
-
+            function visBookSide() {
+                console.log("Der er klikket");
+                location.href = "bookher.html";
+            }
 
             function lavAccordion() {
                 //accordion
