@@ -62,6 +62,13 @@ body {
     margin: 0;
 }
 
+.overskrift {
+    cursor: pointer;
+}
+
+.overskrift.overskrift2 {
+    cursor:auto;
+}
 
 #menu a.current {
     font-weight: 600;
