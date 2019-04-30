@@ -881,6 +881,12 @@ input[type=text] {
         padding-right: 30vw;
     }
 
+    .infotext p {
+        grid-area: tekst;
+        color: #403D3D;
+        padding-right: 30vw;
+    }
+
     .indhold h3 {
         margin: 3vw 7vw 1vw 7vw;
     }
