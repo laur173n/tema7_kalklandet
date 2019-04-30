@@ -156,11 +156,18 @@ ul {
     margin-top: 5vw;
 }
 
+/*Fixer styles når burgermenu åbnes. Tilføjes til element gennem JS*/
 .burgermenu_fix {
     background-color: #FAF8F8;
     position: fixed;
     padding: 2vw;
     margin: 0;
+}
+
+/*Den her selector tagger burgermenuens sibling(main)*/
+/*Fixer styles for main, når burgermenu_fix classen er tilføjet til burgermenu*/
+.burgermenu_fix ~ main {
+    display: none;
 }
 
 .undermenu li {
@@ -527,7 +534,7 @@ input[type=text] {
     }
 
     #menu {
-        top: 100px;
+        top: 110px;
     }
 
     #menu li {
@@ -725,9 +732,15 @@ input[type=text] {
 
     }
 
+    /*fixer search*/
     .search-container {
         grid-area: search;
-        z-index: -10;
+        /*        z-index: -10;*/
+        pointer-events: none;
+    }
+
+    .search-container form input {
+        pointer-events: all;
     }
 
     .search_pic img {
