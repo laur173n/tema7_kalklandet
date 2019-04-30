@@ -47,6 +47,14 @@ h4 {
     text-align: center;
 }
 
+.kkmundervisning h3 {
+    color: #3a7287;
+}
+
+.geoundervisning h3 {
+    color: #26a6a1;
+}
+
 /*grid*/
 body {
     background-color: #FAF8F8;
