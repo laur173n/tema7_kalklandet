@@ -39,6 +39,14 @@ h4 {
     color: #403D3D;
 }
 
+.kkmundervisning h3 {
+    color: #3A7287;
+}
+
+.geoundervisning h3 {
+    color: #26A6A1;
+}
+
 .overskrift {
     text-align: center;
 }
