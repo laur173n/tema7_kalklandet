@@ -36,6 +36,7 @@ h2,
 h3,
 h4 {
     font-family: 'Montserrat', sans-serif;
+    color: #403D3D;
 }
 
 .overskrift {
@@ -748,6 +749,7 @@ input[type=text] {
 
     .some_footer img {
         width: 3vw;
+        margin: 0.5vw;
     }
 
     .overskrift_footer {
@@ -854,6 +856,8 @@ input[type=text] {
         padding-left: 1vw;
     }
 
+    .overskrift_praktisk {}
+
     .undermenu {
         grid-area: undermenu;
         position: absolute;
@@ -865,8 +869,16 @@ input[type=text] {
     .indhold p {
         grid-area: tekst;
         color: #403D3D;
-        margin-left: 7vw;
+        margin: 3vw 7vw;
         padding-right: 30vw;
+    }
+
+    .indhold h3 {
+        margin: 3vw 7vw 1vw 7vw;
+    }
+
+    .indhold h2 {
+        margin: 3vw 7vw 1vw 7vw;
     }
 
     .omos .indhold p {
