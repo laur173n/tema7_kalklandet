@@ -273,28 +273,28 @@ p {
 .geomuseum_lokation img {
     position: absolute;
     width: 32vw;
-    top: 126vw;
-    left: 50vw;
-    animation: pulse 2s ease-out infinite;
-    z-index: -4;
+    top: 137vw;
+    left: 7vw;
+/*    animation: pulse 2s ease-out infinite;*/
+
 }
 
 .stevnsklint_lokation img {
     position: absolute;
-    width: 26vw;
-    top: 127vw;
-    left: 25vw;
-    animation: pulse 2s ease-out infinite;
-    z-index: -5;
+    width: 24vw;
+    top: 122vw;
+    left: 47vw;
+/*    animation: pulse 2s ease-out infinite;*/
+
 }
 
 .koldkrig_lokation img {
     position: absolute;
-    width: 54vw;
-    top: 121vw;
+    width: 34vw;
+    top: 137vw;
     left: 63vw;
-    animation: pulse 2s ease-out infinite;
-    z-index: -6;
+/*    animation: pulse 2s ease-out infinite;*/
+
 
 }
 
@@ -513,20 +513,20 @@ input[type=text] {
     /*forside - placering på kort*/
     .geomuseum_lokation img {
         width: 32vw;
-        top: 122vw;
-        left: 46vw;
+        top: 125vw;
+        left: 7vw;
 
     }
 
     .stevnsklint_lokation img {
         width: 25vw;
-        top: 122vw;
-        left: 23vw;
+        top: 116vw;
+        left: 51vw;
     }
 
     .koldkrig_lokation img {
-        width: 54vw;
-        top: 117vw;
+        width: 34vw;
+        top: 131vw;
         left: 63vw;
     }
 
@@ -775,22 +775,22 @@ input[type=text] {
 
     .geomuseum_lokation img {
         width: 18vw;
-        top: 42.5vw;
-        left: 59vw;
+        top: 47vw;
+        left: 45vw;
         cursor: pointer;
     }
 
     .stevnsklint_lokation img {
-        width: 14vw;
+        width: 13vw;
         top: 43vw;
-        left: 46vw;
+        left: 66vw;
         cursor: pointer;
     }
 
     .koldkrig_lokation img {
-        width: 30vw;
-        top: 40vw;
-        left: 76vw;
+        width: 18vw;
+        top: 47vw;
+        left: 81.4vw;
         cursor: pointer;
     }
 
@@ -917,6 +917,12 @@ input[type=text] {
         top: -120px;
         left: 490px;
 
+    }
+
+    .koldkrig_lokation img {
+        width: 18vw;
+        top: 47vw;
+        left: 80vw;
     }
 
 
