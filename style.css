@@ -322,7 +322,7 @@ p {
 .koldkrig_navn {
     position: absolute;
     width: 36vw;
-    top: 135vw;
+    top: 132vw;
     left: 63vw;
 }
 
@@ -369,21 +369,26 @@ figcaption p {
     font-family: 'Montserrat', sans-serif;
 }
 
+figcaption a {
+    color: white;
+    font-weight: 700;
+}
+
 #geomuseum_lokation figcaption {
-    left: 57vw;
-    top: 132vw;
+    left: 10vw;
+    top: 109vw;
     background-color: #26A6A1;
 }
 
 #stevnsklint_lokation figcaption {
-    left: 19vw;
-    top: 110vw;
+    left: 46vw;
+    top: 96vw;
     background-color: #1283AB;
 }
 
 #koldkrig_lokation figcaption {
-    left: 70vw;
-    top: 104vw;
+    left: 63vw;
+    top: 140vw;
     background-color: #3A7287;
 }
 
@@ -600,28 +605,26 @@ input[type=text] {
     /*pop up vinduer*/
 
     figcaption {
-        font-size: 18px;
+        font-size: 20px;
         padding: 0.5vw;
-        width: 20vw;
+        width: 24vw;
         padding-left: 1rem;
+        padding-bottom: 1vw;
     }
 
     #geomuseum_lokation figcaption {
-        left: 53vw;
-        top: 128vw;
-        background-color: #26A6A1;
+        left: 7vw;
+        top: 106vw;
     }
 
     #stevnsklint_lokation figcaption {
-        left: 20vw;
-        top: 108vw;
-        background-color: #1283AB;
+        left: 46vw;
+        top: 89vw;
     }
 
     #koldkrig_lokation figcaption {
-        left: 72vw;
-        top: 103vw;
-        background-color: #3A7287;
+        left: 62vw;
+        top: 135vw;
     }
 
 
@@ -830,39 +833,39 @@ input[type=text] {
 
     .geomuseum_navn {
         position: absolute;
-        width: 32vw;
-        top: 127vw;
-        left: 7vw;
+        width: 16vw;
+        top: 49vw;
+        left: 48vw;
     }
 
     .geomuseum_pin {
-        width: 6vw;
-        top: 121vw;
-        left: 40vw;
+        width: 2vw;
+        top: 47.4vw;
+        left: 65vw;
     }
 
     .stevnsklint_navn {
-        width: 26vw;
-        top: 110vw;
-        left: 46vw;
+        width: 12vw;
+        top: 44vw;
+        left: 66vw;
     }
 
     .stevnsklint_pin {
-        width: 6vw;
-        top: 107vw;
-        left: 73vw;
+        width: 2.1vw;
+        top: 42vw;
+        left: 78vw;
     }
 
     .koldkrig_navn {
-        width: 36vw;
-        top: 127vw;
-        left: 62vw;
+        width: 17vw;
+        top: 48vw;
+        left: 81vw;
     }
 
     .koldkrig_pin {
-        width: 6vw;
-        top: 115vw;
-        left: 70vw;
+        width: 2.2vw;
+        top: 46vw;
+        left: 77vw;
     }
 
     .velkommen_tekst {
@@ -881,34 +884,32 @@ input[type=text] {
     /*pop op vidue på kort*/
 
 
+     /*pop up vinduer*/
+
     figcaption {
-        opacity: 0;
-        font-size: 18px;
-        padding: 0.3vw;
-        padding-left: 1vw;
-        width: 12vw;
-
+        font-size: 15px;
+        padding: 0.5vw;
+        width: 11vw;
+        padding-left: 1rem;
+        padding-bottom: 1vw;
     }
-
-    figure:hover figcaption {
-        opacity: 1;
-    }
-
 
     #geomuseum_lokation figcaption {
-        left: 62vw;
-        top: 34vw;
+        left: 48vw;
+        top: 38vw;
     }
 
     #stevnsklint_lokation figcaption {
-        left: 43vw;
-        top: 35vw;
+        left: 64vw;
+        top: 33vw;
     }
 
     #koldkrig_lokation figcaption {
-        left: 80vw;
-        top: 32vw;
+        left: 81vw;
+        top: 37vw;
     }
+
+
 
 
     /*----------GRID STRUKTUR----------*/
@@ -988,6 +989,71 @@ input[type=text] {
         left: 490px;
 
     }
+
+    /*placering på kort*/
+
+    .geomuseum_navn {
+        position: absolute;
+        width: 16vw;
+        top: 46vw;
+        left: 48vw;
+    }
+
+    .geomuseum_pin {
+        width: 2vw;
+        top: 44vw;
+        left: 64.2vw;
+    }
+
+    .stevnsklint_navn {
+        width: 12vw;
+        top: 42vw;
+        left: 66vw;
+    }
+
+    .stevnsklint_pin {
+        width: 2.1vw;
+        top: 41vw;
+        left: 78.3vw;
+    }
+
+    .koldkrig_navn {
+        width: 17vw;
+        top: 46vw;
+        left: 80.2vw;
+    }
+
+    .koldkrig_pin {
+        width: 2.2vw;
+        top: 44vw;
+        left: 77vw;
+    }
+
+         /*pop up vinduer*/
+
+    figcaption {
+        font-size: 15px;
+        padding: 0.5vw;
+        width: 11vw;
+        padding-left: 1rem;
+        padding-bottom: 1vw;
+    }
+
+    #geomuseum_lokation figcaption {
+        left: 48vw;
+        top: 38vw;
+    }
+
+    #stevnsklint_lokation figcaption {
+        left: 65vw;
+        top: 34vw;
+    }
+
+    #koldkrig_lokation figcaption {
+        left: 81vw;
+        top: 37vw;
+    }
+
 
 
 }
