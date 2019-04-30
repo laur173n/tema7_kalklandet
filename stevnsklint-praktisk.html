@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,21 +43,24 @@
             <h1 class="overskrift"></h1>
             <div class="undermenu">
                 <ul>
-                    <li><a href="stevnsklint-oversigt.html">OVERSIGT OVER KLINTEN</a></li>
-                    <li><a class="current" href="stevnsklint-praktisk.html">PRAKTISK INFO</a></li>
-                    <li><a href="stevnsklint-undervisning.html">UNDERVISNING</a></li>
-                    <li><a href="stevnsklint-yderligere-info.html">YDERLIGERE VIDEN</a></li>
-
+                    <li><a class="current" href="koldkrigsmuseum-praktisk.html">PRAKTISK INFO</a></li>
+                    <li><a href="koldkrigsmuseum-undervisning.html">UNDERVISNING</a></li>
+                    <li><a href="koldkrigsmuseum-yderligere-info.html">YDERLIGERE VIDEN</a></li>
                 </ul>
             </div>
-
+            <div class="indhold">
+            </div>
+            <div class="infotext"></div>
         </main>
 
         <template>
-            <section class="indhold">
-                <h2 class="overskrift accordion"></h2>
-                <div class="tekst panel"></div>
-            </section>
+            <div class="accordion">
+                <h2 class="overskrift_praktisk"></h2>
+            </div>
+
+            <div class="panel">
+                <div class="tekst"></div>
+            </div>
         </template>
 
 
@@ -102,22 +106,17 @@
             document.addEventListener("DOMContentLoaded", sidenVises);
 
             let indhold;
+            let indhold2;
 
             function sidenVises() {
                 console.log("siden vises");
                 // registrer klik på menuknap
                 document.querySelector(".burger-button").addEventListener("click", toggleMenu);
 
-                start();
+                getJson();
                 visMenuStreger();
 
-                document.querySelector(".overskrift").addEventListener("click", visAttraktionforside);
-                //lavAccordion();
-            }
 
-            function visAttraktionforside() {
-                console.log("Der er klikket");
-                location.href = "stevnsklint.html";
             }
 
             function visMenuStreger() {
@@ -145,33 +144,49 @@
                 }
             }
 
-            function start() {
-                async function getJson() {
-                    let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/stevnsklint"
-                    let jsonData = await fetch(url);
-                    indhold = await jsonData.json();
-                    visIndhold();
-                }
 
-                function visIndhold() {
-                    let dest = document.querySelector(".indhold");
-                    console.log(dest);
-                    let temp = document.querySelector("template");
-                    indhold.forEach(indhold => {
-                        let klon = temp.cloneNode(true).content;
-                        klon.querySelector(".overskrift").innerHTML = indhold.title.rendered;
-                        klon.querySelector(".tekst").innerHTML = indhold.content.rendered;
-                        dest.appendChild(klon);
-                    })
-                    lavAccordion();
-                }
-                getJson();
+            async function getJson() {
+                let url = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/stevnsklint"
+                let url2 = "http://lauravillumsen.com/kea/07-cms/kalklandet/wp/wp-json/wp/v2/pages/34"
+                let jsonData = await fetch(url);
+                let jsonData2 = await fetch(url2);
+                indhold = await jsonData.json();
+                indhold2 = await jsonData2.json();
+                visIndhold();
+            }
+
+            function visIndhold() {
+                document.querySelector(".overskrift").textContent = indhold2.title.rendered;
+                document.querySelector(".indhold").innerHTML = indhold2.content.rendered;
+
+                let dest = document.querySelector(".infotext");
+                let temp = document.querySelector("template");
+                indhold.forEach(indhold => {
+                    let klon = temp.cloneNode(true).content;
+                    klon.querySelector(".overskrift_praktisk").innerHTML = indhold.title.rendered;
+                    klon.querySelector(".tekst").innerHTML = indhold.content.rendered;
+                    dest.appendChild(klon);
+                })
+                document.querySelector(".panel .tekst h3").addEventListener("click", visBookSide);
+                document.querySelector(".overskrift").addEventListener("click", visAttraktionforside);
+                lavAccordion();
+            }
+
+            function visBookSide() {
+                console.log("Der er klikket");
+                location.href = "bookher.html";
+            }
+
+            function visAttraktionforside() {
+                console.log("Der er klikket");
+                location.href = "stevnsklint.html";
             }
 
             function lavAccordion() {
                 //accordion
                 console.log("test");
                 var acc = document.getElementsByClassName("accordion");
+                console.log(acc);
                 var i;
 
                 for (i = 0; i < acc.length; i++) {
@@ -187,7 +202,9 @@
                 }
 
             }
+
         </script>
     </div>
 </body>
+
 </html>
