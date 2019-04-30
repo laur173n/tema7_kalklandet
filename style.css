@@ -589,13 +589,6 @@ input[type=text] {
         top: 18vw;
     }
 
-    /*   raktisk fix*/
-    .infotext {
-        width: 90vw;
-        margin-top: 35vw;
-        margin-right: -30vw;
-        margin-left: -95vw;
-    }
 
     /*    forside tekst splash*/
 
@@ -668,6 +661,15 @@ input[type=text] {
         height: 0;
         width: 100vw;
 
+    }
+
+
+    /*   praktisk fix*/
+    .infotext {
+        width: 90vw;
+        margin-top: 35vw;
+        margin-right: -30vw;
+        margin-left: -95vw;
     }
 
 
