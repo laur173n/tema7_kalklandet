@@ -31,6 +31,10 @@ figure {
     margin: 5vw 4vw 5vw 4vw;
 }
 
+.indhold h2 {
+    margin: 5vw 4vw 5vw 4vw;
+}
+
 h1,
 h2,
 h3,
@@ -273,28 +277,28 @@ p {
 .geomuseum_lokation img {
     position: absolute;
     width: 32vw;
-    top: 137vw;
-    left: 7vw;
-/*    animation: pulse 2s ease-out infinite;*/
-
+    top: 126vw;
+    left: 50vw;
+    animation: pulse 2s ease-out infinite;
+    z-index: -4;
 }
 
 .stevnsklint_lokation img {
     position: absolute;
-    width: 24vw;
-    top: 122vw;
-    left: 47vw;
-/*    animation: pulse 2s ease-out infinite;*/
-
+    width: 26vw;
+    top: 127vw;
+    left: 25vw;
+    animation: pulse 2s ease-out infinite;
+    z-index: -5;
 }
 
 .koldkrig_lokation img {
     position: absolute;
-    width: 34vw;
-    top: 137vw;
+    width: 54vw;
+    top: 121vw;
     left: 63vw;
-/*    animation: pulse 2s ease-out infinite;*/
-
+    animation: pulse 2s ease-out infinite;
+    z-index: -6;
 
 }
 
@@ -433,6 +437,7 @@ input[type=text] {
 .wpforms-field-container {
     margin: 10px 50px;
 }
+
 .wpforms-field-description {
     color: grey;
     font-size: 0.7rem;
@@ -513,20 +518,20 @@ input[type=text] {
     /*forside - placering på kort*/
     .geomuseum_lokation img {
         width: 32vw;
-        top: 125vw;
-        left: 7vw;
+        top: 122vw;
+        left: 46vw;
 
     }
 
     .stevnsklint_lokation img {
         width: 25vw;
-        top: 116vw;
-        left: 51vw;
+        top: 122vw;
+        left: 23vw;
     }
 
     .koldkrig_lokation img {
-        width: 34vw;
-        top: 131vw;
+        width: 54vw;
+        top: 117vw;
         left: 63vw;
     }
 
@@ -775,22 +780,22 @@ input[type=text] {
 
     .geomuseum_lokation img {
         width: 18vw;
-        top: 47vw;
-        left: 45vw;
+        top: 42.5vw;
+        left: 59vw;
         cursor: pointer;
     }
 
     .stevnsklint_lokation img {
-        width: 13vw;
+        width: 14vw;
         top: 43vw;
-        left: 66vw;
+        left: 46vw;
         cursor: pointer;
     }
 
     .koldkrig_lokation img {
-        width: 18vw;
-        top: 47vw;
-        left: 81.4vw;
+        width: 30vw;
+        top: 40vw;
+        left: 76vw;
         cursor: pointer;
     }
 
@@ -917,12 +922,6 @@ input[type=text] {
         top: -120px;
         left: 490px;
 
-    }
-
-    .koldkrig_lokation img {
-        width: 18vw;
-        top: 47vw;
-        left: 80vw;
     }
 
 
