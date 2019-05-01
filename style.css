@@ -372,6 +372,8 @@ figcaption p {
 figcaption a {
     color: white;
     font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3vw;
 }
 
 #geomuseum_lokation figcaption {
@@ -924,6 +926,29 @@ input[type=text] {
     #koldkrig_lokation figcaption {
         left: 81vw;
         top: 37vw;
+    }
+
+    figcaption a {
+        font-size: 1vw;
+    }
+
+
+
+
+    figcaption {
+        opacity: 0;
+    }
+
+    #koldkrig_lokation:hover figcaption {
+        opacity: 1;
+    }
+
+    #stevnsklint_lokation:hover figcaption {
+        opacity: 1;
+    }
+
+    #geomuseum_lokation:hover figcaption {
+        opacity: 1;
     }
 
 
