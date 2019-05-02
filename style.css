@@ -191,7 +191,7 @@ p {
 
 /*footer*/
 .footer_udengrid {
-    padding: 10vw;
+    padding: 5vw 10vw;
     background-color: white;
 }
 
@@ -253,6 +253,11 @@ p {
 .brodtekst_footer {
     color: #403D3D;
 }
+.bestyrelse_footer {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+
+    }
 
 /*FORSIDE*/
 
@@ -289,6 +294,12 @@ p {
 .adresse_link {
     font-weight: normal;
 
+}
+.omos_forside {
+    text-align: center;
+    margin: 10vw 6vw;
+    font-weight: 500;
+    line-height: 2;
 }
 /*placering på kort*/
 
@@ -462,6 +473,7 @@ input[type=text] {
     margin-top: 5px;
     font-size: 13px;
     border: none;
+
 }
 
 
@@ -678,7 +690,10 @@ input[type=text] {
         width: 100vw;
 
     }
-
+    .omos_forside {
+        margin: 5vw 15vw;
+        line-height: 2.5;
+    }
 
     /*   praktisk fix*/
     .infotext {
@@ -735,27 +750,40 @@ input[type=text] {
         grid-area: header;
         display: grid;
         grid-template-areas:
-            "logo menu menu search";
+            "logo menu menu";
         margin: 2vw;
 
     }
 
     /*fixer search*/
     .search-container {
-        grid-area: search;
+        left: -63px;
         /*        z-index: -10;*/
         pointer-events: none;
     }
 
     .search-container form input {
         pointer-events: all;
+        margin-top: 0;
+        border: solid 1px #F45D2F;
+
     }
 
     .search_pic img {
         width: 24px;
         position: absolute;
-        top: 0.4vw;
-        right: 0;
+        top: 2px;
+        right: -215px;
+    }
+    .geoborder_footer form input {
+        border: solid 1px #26A6A1;
+    }
+    .koldborder_footer form input {
+        border: solid 1px #3A7287;
+    }
+
+    .stevnsborder_footer form input {
+        border: solid 1px #1283AB;
     }
 
     main {
@@ -807,11 +835,12 @@ input[type=text] {
     /*    footer */
 
     .footer_udengrid {
-        padding: 5vw 10vw 1vw 10vw;
+        padding: 5vw 10vw 2vw 10vw;
         display: flex;
         align-items: flex-start;
         justify-content: space-around;
-        background-color: white;
+        background-color: #E6E6E6;
+
     }
 
     .overstebox_footer {
@@ -848,11 +877,13 @@ input[type=text] {
     .some_footer img {
         width: 3vw;
         margin: 0.5vw;
+        margin-left: 0;
     }
 
     .overskrift_footer {
         color: #F45D2F;
     }
+
 
     /*placering på kort*/
 
