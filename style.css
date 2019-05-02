@@ -394,7 +394,11 @@ figcaption a {
     background-color: #3A7287;
 }
 
-
+/*AKTUELT*/
+.pil_orange img {
+    width: 5vw;
+    margin-top: 2vw;
+}
 
 /*ACCORDION*/
 .accordion {

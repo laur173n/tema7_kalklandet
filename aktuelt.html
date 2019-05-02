@@ -7,7 +7,7 @@
     <title>Aktuelt | Kalklandet</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,700i,900,900i" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="img/K_kalklandet_cmyk.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/K_kalklandet_cmyk.png" />
 </head>
 
 <body>
@@ -46,9 +46,11 @@
 
     <template>
         <section class="nyhed">
+
             <div class="accordion">
                 <h2 class="overskrift_aktuelt"></h2>
                 <div class="dato"></div>
+                <div class="pil_orange"><img src="img/pil_orange.png" alt="pil"></div>
             </div>
 
             <div class="panel">
@@ -158,7 +160,27 @@
                     dest.appendChild(klon);
                 })
                 lavAccordion();
+                togglePil();
+                document.querySelector(".accordion").addEventListener("click", togglePil);
 
+
+            }
+
+            function togglePil() {
+                console.log("toggle pil");
+                document.querySelector(".pil_orange").classList.toggle("hide");
+
+                let erSkjult = document.querySelector(".pil_orange").classList.contains("hide");
+
+                if (erSkjult == true) {
+                    console.log("erskjult info");
+                    //info er skjult
+                    document.querySelector(".pil_orange img").src = "img/pil_orange.png";
+                } else {
+                    console.log("vist");
+                    //info er nu vist - ændr pil til op
+                    document.querySelector(".pil_orange img").src = "img/pil_orange_op.png";
+                }
             }
             getJson();
         }
