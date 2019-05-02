@@ -286,7 +286,10 @@ p {
     text-align: center;
 }
 
+.adresse_link {
+    font-weight: normal;
 
+}
 /*placering på kort*/
 
 .geomuseum_navn {
@@ -804,11 +807,11 @@ input[type=text] {
     /*    footer */
 
     .footer_udengrid {
-        padding: 5vw 10vw 5vw 10vw;
+        padding: 5vw 10vw 1vw 10vw;
         display: flex;
         align-items: flex-start;
         justify-content: space-around;
-        background-color: #FAF8F8;
+        background-color: white;
     }
 
     .overstebox_footer {
