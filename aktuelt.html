@@ -160,17 +160,18 @@
                     dest.appendChild(klon);
                 })
                 lavAccordion();
-                togglePil();
-                document.querySelector(".accordion").addEventListener("click", togglePil);
+                document.querySelectorAll(".accordion").forEach((elm) => {
+                    elm.addEventListener("click", togglePil);
+                })
+
 
 
             }
 
             function togglePil() {
                 console.log("toggle pil");
-                document.querySelector(".pil_orange").classList.toggle("hide");
 
-                let erSkjult = document.querySelector(".pil_orange").classList.contains("hide");
+                let erSkjult = document.querySelector(".pil_orange").classList.contains("panel");
 
                 if (erSkjult == true) {
                     console.log("erskjult info");
