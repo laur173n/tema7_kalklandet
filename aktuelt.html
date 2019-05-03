@@ -42,9 +42,9 @@
     <template>
         <section class="nyhed">
 
-            <div class="accordion">
+            <div class="accordion_aktuelt">
+               <div class="dato"></div>
                 <h2 class="overskrift_aktuelt"></h2>
-                <div class="dato"></div>
                 <div class="pil_orange"><img src="img/pil_orange.png" alt="pil"></div>
             </div>
 
@@ -162,7 +162,7 @@
                     dest.appendChild(klon);
                 })
                 lavAccordion();
-                document.querySelectorAll(".accordion").forEach((elm) => {
+                document.querySelectorAll(".accordion_aktuelt").forEach((elm) => {
                     elm.addEventListener("click", togglePil);
                 })
 
@@ -191,7 +191,7 @@
         function lavAccordion() {
             //accordion
             console.log("test");
-            var acc = document.getElementsByClassName("accordion");
+            var acc = document.getElementsByClassName("accordion_aktuelt");
             var i;
 
             for (i = 0; i < acc.length; i++) {
