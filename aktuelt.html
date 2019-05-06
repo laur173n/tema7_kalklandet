@@ -43,7 +43,7 @@
         <section class="nyhed">
 
             <div class="accordion_aktuelt">
-               <div class="dato"></div>
+                <div class="dato"></div>
                 <h2 class="overskrift_aktuelt"></h2>
                 <div class="pil_orange"><img src="img/pil_orange.png" alt="pil"></div>
             </div>
@@ -89,7 +89,7 @@
                 <p class="overskrift_footer">PRESSE</p>
                 <p class="overskrift_footer">FONDE OG SPONSORATER</p>
                 <a class="overskrift_footer bestyrelse_footer" href="bestyrelse.html">BESTYRELSE</a>
-                     <div class="search-container sog_skjul">
+                <div class="search-container sog_skjul">
                     <form action="/action_page.php">
                         <input type="text" placeholder="SØG" name="search">
                     </form>
@@ -173,7 +173,7 @@
             function togglePil() {
                 console.log("toggle pil");
 
-                let erSkjult = document.querySelector(".pil_orange").classList.contains("panel");
+                let erSkjult = document.querySelector(".panel").style.maxHeight == 0;
 
                 if (erSkjult == true) {
                     console.log("erskjult info");

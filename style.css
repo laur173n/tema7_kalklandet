@@ -253,11 +253,12 @@ p {
 .brodtekst_footer {
     color: #403D3D;
 }
-.bestyrelse_footer {
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
 
-    }
+.bestyrelse_footer {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
 
 /*FORSIDE*/
 
@@ -295,12 +296,14 @@ p {
     font-weight: normal;
 
 }
+
 .omos_forside {
     text-align: center;
     margin: 10vw 6vw;
     font-weight: 500;
     line-height: 2;
 }
+
 /*placering på kort*/
 
 .geomuseum_navn {
@@ -470,11 +473,12 @@ figcaption a {
     border-bottom: solid 2px #403D3D;
 }
 
-    .active,
+.active,
 .accordion_aktuelt:hover {
     background-color: #E6E6E6;
     color: #403D3D;
 }
+
 .dato {
     font-size: 1.5rem;
 }
@@ -681,26 +685,28 @@ input[type=text] {
         width: 70vw;
     }
 
-     /**accordion aktuelt**/
+    /**accordion aktuelt**/
     .accordion_aktuelt {
         display: inline-block;
-}
+    }
 
 
     .active,
-.accordion_aktuelt:hover {
-    background-color: #E6E6E6;
-    color: #403D3D;
-}
-.dato {
-   text-align: left;
-    width: 20%;
-    display: inline-block;
-    font-size: 1.8rem;
-    position: absolute;
-    left: 30px;
-    margin-top: 14px;
-}
+    .accordion_aktuelt:hover {
+        background-color: #E6E6E6;
+        color: #403D3D;
+    }
+
+    .dato {
+        text-align: left;
+        width: 20%;
+        display: inline-block;
+        font-size: 1.8rem;
+        position: absolute;
+        left: 30px;
+        margin-top: 14px;
+    }
+
     .overskrift_aktuelt {
         width: 50%;
         text-align: center;
@@ -711,402 +717,413 @@ input[type=text] {
 
 
 
-/*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
+    /*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
 
-@media only screen and (min-width: 1270px) {
+    @media only screen and (min-width: 1270px) {
 
-    #menu li a:hover {
-        font-weight: 600;
+        #menu li a:hover {
+            font-weight: 600;
+        }
+
+        .undermenu li a:hover {
+            font-weight: 600;
+        }
+
+        .logo img {
+            width: 18vw;
+        }
+
+        .hide {
+            visibility: visible;
+            pointer-events: initial;
+        }
+
+        #menu {
+            background-color: transparent;
+            margin: 0;
+            width: initial;
+            height: 0;
+            width: 100vw;
+
+        }
+
+        .omos_forside {
+            margin: 5vw 15vw;
+            line-height: 2.5;
+        }
+
+        /*   praktisk fix*/
+        .infotext {
+            width: 90vw;
+            margin-top: 35vw;
+            margin-right: -30vw;
+            margin-left: -95vw;
+        }
+
+
+        header {
+            display: inline-grid;
+            position: static;
+
+        }
+
+        .burger-button {
+            display: none;
+        }
+
+        #menu li {
+            padding: 0;
+            display: inline-grid;
+            position: relative;
+            top: -125px;
+            left: 420px;
+        }
+
+        #menu li a {
+            font-size: 0.9rem;
+            padding-left: 0vw;
+            padding: 0 12px 0 18px;
+        }
+
+        .undermenu li {
+            border-bottom: none;
+            display: inline-block;
+            padding: 0rem 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .undermenu ul {
+            text-align: right;
+            margin-bottom: 1rem;
+            margin-top: 1.5vw;
+        }
+
+        .sog_skjul {
+            display: initial;
+        }
+
+        header {
+            grid-area: header;
+            display: grid;
+            grid-template-areas:
+                "logo menu menu";
+            margin: 2vw;
+
+        }
+
+        /*fixer search*/
+        .search-container {
+            left: -63px;
+            /*        z-index: -10;*/
+            pointer-events: none;
+        }
+
+        .search-container form input {
+            pointer-events: all;
+            margin-top: 0;
+            border: solid 1px #F45D2F;
+
+        }
+
+        .search_pic img {
+            width: 24px;
+            position: absolute;
+            top: 2px;
+            right: -215px;
+        }
+
+        .geoborder_footer form input {
+            border: solid 1px #26A6A1;
+        }
+
+        .koldborder_footer form input {
+            border: solid 1px #3A7287;
+        }
+
+        .stevnsborder_footer form input {
+            border: solid 1px #1283AB;
+        }
+
+        main {
+            margin-top: -3vw;
+        }
+
+        /*    BORDER I HEADER*/
+        .border {
+            width: 1px;
+            height: 60px;
+            background-color: #F45D2F;
+            transform: rotate(20deg);
+            margin-top: -35px;
+            display: inline-block;
+        }
+
+        .border_kold {
+            width: 1px;
+            height: 60px;
+            background-color: #3A7287;
+            transform: rotate(20deg);
+            margin-top: -35px;
+            display: inline-block;
+        }
+
+        .border_stevns {
+            width: 1px;
+            height: 60px;
+            background-color: #1283AB;
+            transform: rotate(20deg);
+            margin-top: -35px;
+            display: inline-block;
+        }
+
+        .border_geo {
+            width: 1px;
+            height: 60px;
+            background-color: #26A6A1;
+            transform: rotate(20deg);
+            margin-top: -35px;
+            display: inline-block;
+        }
+
+        .overskrift {
+            text-align: left;
+        }
+
+
+        /*    footer */
+
+        .footer_udengrid {
+            padding: 4vw 10vw 4vw 10vw;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            background-color: #E6E6E6;
+
+        }
+
+        .overstebox_footer {
+            margin-bottom: 0vw;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .adresse_footer {
+            display: inline-block;
+        }
+
+        .kontakt_footer {
+            display: inline-block;
+        }
+
+        .some_footer {
+            margin-bottom: 0vw;
+            display: block;
+        }
+
+        .somewrapper_footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .andet_footer {
+            margin-bottom: 0vw;
+            display: inline-block;
+        }
+
+        .some_footer img {
+            width: 3vw;
+            margin: 0.5vw;
+            margin-left: 0;
+        }
+
+        .overskrift_footer {
+            color: #F45D2F;
+        }
+
+
+        /*placering på kort*/
+
+        .geomuseum_navn {
+            position: absolute;
+            width: 16vw;
+            top: 49vw;
+            left: 48vw;
+        }
+
+        .geomuseum_pin {
+            width: 2vw;
+            top: 47.4vw;
+            left: 65vw;
+        }
+
+        .stevnsklint_navn {
+            width: 12vw;
+            top: 44vw;
+            left: 66vw;
+        }
+
+        .stevnsklint_pin {
+            width: 2.1vw;
+            top: 42vw;
+            left: 78vw;
+        }
+
+        .koldkrig_navn {
+            width: 17vw;
+            top: 48vw;
+            left: 81vw;
+        }
+
+        .koldkrig_pin {
+            width: 2.2vw;
+            top: 46vw;
+            left: 77vw;
+        }
+
+        .velkommen_tekst {
+            font-weight: 700;
+            font-size: 2.5rem;
+            top: 180px;
+        }
+
+        .find_adresser {
+            font-weight: 600;
+            font-size: 1rem;
+            top: 240px;
+
+        }
+
+        /*    STEVNS KLINT - VIDEN*/
+        .billede_viden_stevns img
+        /*pop op vidue på kort*/
+
+
+        /*pop up vinduer*/
+
+        figcaption {
+            font-size: 15px;
+            padding: 0.5vw;
+            width: 11vw;
+            padding-left: 1rem;
+            padding-bottom: 1vw;
+        }
+
+        #geomuseum_lokation figcaption {
+            left: 48vw;
+            top: 38vw;
+        }
+
+        #stevnsklint_lokation figcaption {
+            left: 64vw;
+            top: 33vw;
+        }
+
+        #koldkrig_lokation figcaption {
+            left: 81vw;
+            top: 37vw;
+        }
+
+        figcaption a {
+            font-size: 1vw;
+        }
+
+
+
+
+        figcaption {
+            opacity: 0;
+        }
+
+        #koldkrig_lokation:hover figcaption {
+            opacity: 1;
+        }
+
+        #stevnsklint_lokation:hover figcaption {
+            opacity: 1;
+        }
+
+        #geomuseum_lokation:hover figcaption {
+            opacity: 1;
+        }
+
+
+
+
+        /*----------GRID STRUKTUR----------*/
+
+        main {
+            display: grid;
+            grid-template-areas:
+                "billede billede";
+            "overskrift undermenu";
+            "tekst tekst";
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .indhold figure img {
+            grid-area: billede;
+            margin-bottom: 7vw;
+            padding: 0;
+            width: 100vw;
+
+        }
+
+
+
+        .overskrift {
+            grid-area: overskrift;
+            position: absolute;
+            top: 35vw;
+            width: 99vw;
+            border-bottom: 2px #403D3D solid;
+            color: #403D3D;
+            padding-left: 1vw;
+        }
+
+        .overskrift_praktisk {}
+
+        .undermenu {
+            grid-area: undermenu;
+            position: absolute;
+            top: 35vw;
+            right: 0;
+
+        }
+
+        .indhold p {
+            grid-area: tekst;
+            color: #403D3D;
+            margin: 3vw 7vw;
+            padding-right: 30vw;
+        }
+
+        .indhold h3 {
+            margin: 2vw 7vw 3vw 7vw;
+        }
+
+        .indhold h2 {
+            margin: 3vw 7vw 1vw 7vw;
+        }
+
+        .omos .indhold p {
+            padding-right: 0vw;
+        }
+
+
+
+        /*stevns klint oversigt over klinten*/
+        .indhold .wp-image-192 {
+            width: 30vw;
+        }
     }
 
-    .undermenu li a:hover {
-        font-weight: 600;
-    }
 
-    .logo img {
-        width: 18vw;
-    }
 
-    .hide {
-        visibility: visible;
-        pointer-events: initial;
-    }
-
-    #menu {
-        background-color: transparent;
-        margin: 0;
-        width: initial;
-        height: 0;
-        width: 100vw;
-
-    }
-    .omos_forside {
-        margin: 5vw 15vw;
-        line-height: 2.5;
-    }
-
-    /*   praktisk fix*/
-    .infotext {
-        width: 90vw;
-        margin-top: 35vw;
-        margin-right: -30vw;
-        margin-left: -95vw;
-    }
-
-
-    header {
-        display: inline-grid;
-        position: static;
-
-    }
-
-    .burger-button {
-        display: none;
-    }
-
-    #menu li {
-        padding: 0;
-        display: inline-grid;
-        position: relative;
-        top: -125px;
-        left: 420px;
-    }
-
-    #menu li a {
-        font-size: 0.9rem;
-        padding-left: 0vw;
-        padding: 0 12px 0 18px;
-    }
-
-    .undermenu li {
-        border-bottom: none;
-        display: inline-block;
-        padding: 0rem 1rem;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 0.9rem;
-    }
-
-    .undermenu ul {
-        text-align: right;
-        margin-bottom: 1rem;
-        margin-top: 1.5vw;
-    }
-
-    .sog_skjul {
-        display: initial;
-    }
-
-    header {
-        grid-area: header;
-        display: grid;
-        grid-template-areas:
-            "logo menu menu";
-        margin: 2vw;
-
-    }
-
-    /*fixer search*/
-    .search-container {
-        left: -63px;
-        /*        z-index: -10;*/
-        pointer-events: none;
-    }
-
-    .search-container form input {
-        pointer-events: all;
-        margin-top: 0;
-        border: solid 1px #F45D2F;
-
-    }
-
-    .search_pic img {
-        width: 24px;
-        position: absolute;
-        top: 2px;
-        right: -215px;
-    }
-    .geoborder_footer form input {
-        border: solid 1px #26A6A1;
-    }
-    .koldborder_footer form input {
-        border: solid 1px #3A7287;
-    }
-
-    .stevnsborder_footer form input {
-        border: solid 1px #1283AB;
-    }
-
-    main {
-        margin-top: -3vw;
-    }
-
-    /*    BORDER I HEADER*/
-    .border {
-        width: 1px;
-        height: 60px;
-        background-color: #F45D2F;
-        transform: rotate(20deg);
-        margin-top: -35px;
-        display: inline-block;
-    }
-
-    .border_kold {
-        width: 1px;
-        height: 60px;
-        background-color: #3A7287;
-        transform: rotate(20deg);
-        margin-top: -35px;
-        display: inline-block;
-    }
-
-    .border_stevns {
-        width: 1px;
-        height: 60px;
-        background-color: #1283AB;
-        transform: rotate(20deg);
-        margin-top: -35px;
-        display: inline-block;
-    }
-
-    .border_geo {
-        width: 1px;
-        height: 60px;
-        background-color: #26A6A1;
-        transform: rotate(20deg);
-        margin-top: -35px;
-        display: inline-block;
-    }
-
-    .overskrift {
-        text-align: left;
-    }
-
-
-    /*    footer */
-
-    .footer_udengrid {
-        padding: 4vw 10vw 4vw 10vw;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-around;
-        background-color: #E6E6E6;
-
-    }
-
-    .overstebox_footer {
-        margin-bottom: 0vw;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .adresse_footer {
-        display: inline-block;
-    }
-
-    .kontakt_footer {
-        display: inline-block;
-    }
-
-    .some_footer {
-        margin-bottom: 0vw;
-        display: block;
-    }
-
-    .somewrapper_footer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .andet_footer {
-        margin-bottom: 0vw;
-        display: inline-block;
-    }
-
-    .some_footer img {
-        width: 3vw;
-        margin: 0.5vw;
-        margin-left: 0;
-    }
-
-    .overskrift_footer {
-        color: #F45D2F;
-    }
-
-
-    /*placering på kort*/
-
-    .geomuseum_navn {
-        position: absolute;
-        width: 16vw;
-        top: 49vw;
-        left: 48vw;
-    }
-
-    .geomuseum_pin {
-        width: 2vw;
-        top: 47.4vw;
-        left: 65vw;
-    }
-
-    .stevnsklint_navn {
-        width: 12vw;
-        top: 44vw;
-        left: 66vw;
-    }
-
-    .stevnsklint_pin {
-        width: 2.1vw;
-        top: 42vw;
-        left: 78vw;
-    }
-
-    .koldkrig_navn {
-        width: 17vw;
-        top: 48vw;
-        left: 81vw;
-    }
-
-    .koldkrig_pin {
-        width: 2.2vw;
-        top: 46vw;
-        left: 77vw;
-    }
-
-    .velkommen_tekst {
-        font-weight: 700;
-        font-size: 2.5rem;
-        top: 180px;
-    }
-
-    .find_adresser {
-        font-weight: 600;
-        font-size: 1rem;
-        top: 240px;
-
-    }
-
-    /*pop op vidue på kort*/
-
-
-    /*pop up vinduer*/
-
-    figcaption {
-        font-size: 15px;
-        padding: 0.5vw;
-        width: 11vw;
-        padding-left: 1rem;
-        padding-bottom: 1vw;
-    }
-
-    #geomuseum_lokation figcaption {
-        left: 48vw;
-        top: 38vw;
-    }
-
-    #stevnsklint_lokation figcaption {
-        left: 64vw;
-        top: 33vw;
-    }
-
-    #koldkrig_lokation figcaption {
-        left: 81vw;
-        top: 37vw;
-    }
-
-    figcaption a {
-        font-size: 1vw;
-    }
-
-
-
-
-    figcaption {
-        opacity: 0;
-    }
-
-    #koldkrig_lokation:hover figcaption {
-        opacity: 1;
-    }
-
-    #stevnsklint_lokation:hover figcaption {
-        opacity: 1;
-    }
-
-    #geomuseum_lokation:hover figcaption {
-        opacity: 1;
-    }
-
-
-
-
-    /*----------GRID STRUKTUR----------*/
-
-    main {
-        display: grid;
-        grid-template-areas:
-            "billede billede";
-        "overskrift undermenu";
-        "tekst tekst";
-        margin: 0;
-        padding: 0;
-    }
-
-    .indhold figure img {
-        grid-area: billede;
-        margin-bottom: 7vw;
-        padding: 0;
-        width: 100vw;
-
-    }
-
-
-    .overskrift {
-        grid-area: overskrift;
-        position: absolute;
-        top: 35vw;
-        width: 99vw;
-        border-bottom: 2px #403D3D solid;
-        color: #403D3D;
-        padding-left: 1vw;
-    }
-
-    .overskrift_praktisk {}
-
-    .undermenu {
-        grid-area: undermenu;
-        position: absolute;
-        top: 35vw;
-        right: 0;
-
-    }
-
-    .indhold p {
-        grid-area: tekst;
-        color: #403D3D;
-        margin: 3vw 7vw;
-        padding-right: 30vw;
-    }
-
-    .indhold h3 {
-        margin: 2vw 7vw 3vw 7vw;
-    }
-
-    .indhold h2 {
-        margin: 3vw 7vw 1vw 7vw;
-    }
-
-    .omos .indhold p {
-        padding-right: 0vw;
-    }
-
-
-
-    /*stevns klint oversigt over klinten*/
-    .indhold .wp-image-192 {
-        width: 30vw;
-    }
 
 }
 
