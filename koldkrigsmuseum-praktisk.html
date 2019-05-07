@@ -51,6 +51,8 @@
         <template>
             <div class="accordion">
                 <h2 class="overskrift_praktisk"></h2>
+                <div class="pil_kold"><img src="img/pil_kold.png" alt="pil"></div>
+
             </div>
 
             <div class="panel">
@@ -93,12 +95,12 @@
                         <p class="overskrift_footer">PRESSE</p>
                         <p class="overskrift_footer">FONDE OG SPONSORATER</p>
                         <a class="overskrift_footer bestyrelse_footer" href="bestyrelse.html">BESTYRELSE</a>
-                     <div class="search-container sog_skjul koldborder_footer">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="SØG" name="search">
-                    </form>
-                    <div class="search_pic"><img src="img/search.png" alt=""></div>
-                </div>
+                        <div class="search-container sog_skjul koldborder_footer">
+                            <form action="/action_page.php">
+                                <input type="text" placeholder="SØG" name="search">
+                            </form>
+                            <div class="search_pic"><img src="img/search.png" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,8 +199,12 @@
                         var panel = this.nextElementSibling;
                         if (panel.style.maxHeight) {
                             panel.style.maxHeight = null;
+                            this.querySelector(".pil_kold img").src = "img/pil_kold.png";
+
                         } else {
                             panel.style.maxHeight = panel.scrollHeight + "px";
+                            this.querySelector(".pil_kold img").src = "img/pil_kold_op.png";
+
                         }
                     });
                 }

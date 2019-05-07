@@ -411,10 +411,22 @@ figcaption a {
     background-color: #3A7287;
 }
 
-/*AKTUELT*/
+/*PILE I ACCORDIONS*/
 .pil_orange img {
-    width: 4vw;
-    margin-top: 0;
+    width: 5vw;
+    margin-top: 2vw;
+}
+
+.pil_geo img {
+    width: 5vw;
+}
+
+.pil_stevns img {
+    width: 5vw;
+}
+
+.pil_kold img {
+    width: 5vw;
 }
 
 /*ACCORDION*/
@@ -457,7 +469,6 @@ figcaption a {
 .dato {
     font-family: 'Montserrat', sans-serif;
     color: #f45d2f;
-    font-size: 1.5rem;
 }
 
 .accordion_aktuelt {
@@ -480,12 +491,10 @@ figcaption a {
     color: #403D3D;
 }
 
-
-
-.overskrift_aktuelt_h1 {
-    text-align: center;
+.dato {
     font-size: 1.5rem;
 }
+
 /*** SEARCH ****/
 
 .sog_skjul {
@@ -603,12 +612,6 @@ input[type=text] {
         margin-top: 0;
     }
 
-    /*AKTUELT*/
-.pil_orange img {
-    width: 2vw;
-    margin-top: 0;
-}
-
 
     /*placering på kort*/
 
@@ -714,7 +717,6 @@ input[type=text] {
         position: absolute;
         left: 30px;
         margin-top: 14px;
-        float: right;
     }
 
     .overskrift_aktuelt {
@@ -1139,12 +1141,6 @@ input[type=text] {
         .indhold .wp-image-192 {
             width: 30vw;
         }
-
-            /*AKTUELT*/
-        .pil_orange img {
-    width: 1.5vw;
-    margin-top: 0;
-}
     }
 
 
@@ -1199,10 +1195,6 @@ input[type=text] {
         width: 2.2vw;
         top: 44vw;
         left: 77vw;
-    }
-    .overskrift_aktuelt_h1 {
-        text-align: left;
-        margin: 1.5em 1em;
     }
 
     /*pop up vinduer*/
