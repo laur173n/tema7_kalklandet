@@ -717,6 +717,7 @@ input[type=text] {
 
 
 
+
     /*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
 
     @media only screen and (min-width: 1270px) {
@@ -997,7 +998,15 @@ input[type=text] {
         }
 
         /*    STEVNS KLINT - VIDEN*/
-        .billede_viden_stevns img
+        .indhold .wp-image-361 {
+            width: 40vw;
+            position: absolute;
+            z-index: -999;
+            top: 44vw;
+            right: 7vw;
+            opacity: 0.3;
+        }
+
         /*pop op vidue på kort*/
 
 

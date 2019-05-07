@@ -34,7 +34,8 @@
     </header>
 
     <main>
-        <h1 class="overskrift_aktuelt"></h1>
+        <p class="overskrift_aktuelt_h1">BEGIVENHEDER 2019</p>
+        <h2 class="overskrift_aktuelt"></h2>
         <div class="nyheder">
         </div>
     </main>
@@ -162,29 +163,29 @@
                     dest.appendChild(klon);
                 })
                 lavAccordion();
-                document.querySelectorAll(".accordion_aktuelt").forEach((elm) => {
-                    elm.addEventListener("click", togglePil);
-                })
+                // document.querySelectorAll(".accordion_aktuelt").forEach((elm) => {
+                // elm.addEventListener("click", togglePil);
+                // })
 
 
 
             }
 
-            function togglePil() {
-                console.log("toggle pil");
-
-                let erSkjult = document.querySelector(".panel").style.maxHeight == 0;
-
-                if (erSkjult == true) {
-                    console.log("erskjult info");
-                    //info er skjult
-                    document.querySelector(".pil_orange img").src = "img/pil_orange.png";
-                } else {
-                    console.log("vist");
-                    //info er nu vist - ændr pil til op
-                    document.querySelector(".pil_orange img").src = "img/pil_orange_op.png";
-                }
-            }
+            //  function togglePil() {
+            // console.log("toggle pil");
+            //
+            // let erSkjult = document.querySelector(".panel").style.maxHeight == 0;
+            //
+            // if (erSkjult == true) {
+            // console.log("erskjult info");
+            // //info er skjult
+            // document.querySelector(".pil_orange img").src = "img/pil_orange.png";
+            // } else {
+            // console.log("vist");
+            // //info er nu vist - ændr pil til op
+            // document.querySelector(".pil_orange img").src = "img/pil_orange_op.png";
+            // }
+            // }
             getJson();
         }
 
@@ -200,13 +201,17 @@
                     var panel = this.nextElementSibling;
                     if (panel.style.maxHeight) {
                         panel.style.maxHeight = null;
+                        this.querySelector(".pil_orange img").src = "img/pil_orange.png";
                     } else {
                         panel.style.maxHeight = panel.scrollHeight + "px";
+                        this.querySelector(".pil_orange img").src = "img/pil_orange_op.png";
+
                     }
                 });
             }
 
         }
+
     </script>
 
 </body>
