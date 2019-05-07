@@ -732,11 +732,11 @@ input[type=text] {
     }
 
 
-       /*AKTUELT*/
-.pil_orange img {
-    width: 2vw;
-    margin-top: 0;
-}
+    /*AKTUELT*/
+    .pil_orange img {
+        width: 2vw;
+        margin-top: 0;
+    }
 
 
     /*-----------------------------MEDIAQUERY FOR WEBSITE------------------------------------*/
@@ -833,11 +833,12 @@ input[type=text] {
             margin: 2vw;
 
         }
-            /*PIL*/
+
+        /*PIL*/
         .pil_orange img {
-    width: 1.5vw;
-    margin-top: 0;
-}
+            width: 1.5vw;
+            margin-top: 0;
+        }
 
         /*fixer search*/
         .search-container {
@@ -1023,7 +1024,7 @@ input[type=text] {
 
         }
 
-        /*    STEVNS KLINT - VIDEN*/
+        /*    STEVNS KLINT - BILLEDER PÅ SIDER*/
         .indhold .wp-image-361 {
             width: 40vw;
             position: absolute;
@@ -1031,6 +1032,23 @@ input[type=text] {
             top: 44vw;
             right: 7vw;
             opacity: 0.3;
+        }
+
+        .indhold .wp-image-372 {
+            width: 40vw;
+            position: absolute;
+            z-index: -999;
+            top: 59vw;
+            right: 3vw;
+            opacity: 0.3;
+        }
+
+        .indhold .wp-image-379 {
+            width: 45vw;
+            position: absolute;
+            z-index: -999;
+            top: 44vw;
+            right: 7vw;
         }
 
         /*pop op vidue på kort*/
@@ -1157,7 +1175,7 @@ input[type=text] {
         }
     }
 
- .overskrift_aktuelt_h3 {
+    .overskrift_aktuelt_h3 {
         text-align: left;
         margin: 1.5em 1em;
     }
@@ -1213,11 +1231,8 @@ input[type=text] {
         top: 44vw;
         left: 77vw;
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
-
+    <<<<<<< HEAD======= > > > > > > > origin/master
     /*pop up vinduer*/
 
     figcaption {
