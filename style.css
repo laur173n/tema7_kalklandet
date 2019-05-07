@@ -522,6 +522,102 @@ input[type=text] {
 
 }
 
+/* BILLEDER PÅ SIDER*/
+
+/*kold, forside*/
+.indhold .wp-image-415 {
+    display: none;
+}
+
+/*kold, vandmærke*/
+.indhold .wp-image-433 {
+    width: 80vw;
+    position: absolute;
+    z-index: -999;
+    right: 8vw;
+    top: 90vw;
+    opacity: 0.2;
+}
+
+/*kold, undervisning*/
+.indhold .wp-image-428 {
+    z-index: -999;
+    opacity: 0.9;
+}
+
+
+/*stevns, yderligere info*/
+.indhold .wp-image-361 {
+    visibility: hidden;
+}
+
+/* stevns klint, vandmærke*/
+.indhold .wp-image-431 {
+    width: 100vw;
+    position: absolute;
+    z-index: -999;
+    right: 1vw;
+    top: 98vw;
+    opacity: 0.1;
+}
+
+/*stevns, undervisning*/
+.indhold .wp-image-417 {
+    opacity: 0.7;
+}
+
+.indhold .wp-image-372 {
+    width: 40vw;
+    position: absolute;
+    z-index: -999;
+    top: 59vw;
+    right: 3vw;
+    opacity: 0.3;
+}
+
+.indhold .wp-image-379 {
+    width: 45vw;
+    position: absolute;
+    z-index: -999;
+    top: 44vw;
+    right: 7vw;
+    opacity: 0.6;
+}
+
+
+
+
+
+.indhold .wp-image-419 {
+    width: 55vw;
+    position: absolute;
+    z-index: -999;
+    right: 7vw;
+
+}
+
+/*geo, vandmærke*/
+.indhold .wp-image-424 {
+    width: 50vw;
+    position: absolute;
+    z-index: -999;
+    right: 7vw;
+    top: 90vw;
+    opacity: 0.1;
+}
+
+
+
+.indhold .wp-image-421 {
+    width: 35vw;
+    position: absolute;
+    z-index: -999;
+    right: 19vw;
+    top: 51vw;
+    opacity: 0.2;
+}
+
+
 
 /*BOOK HER SIDE*/
 
@@ -696,7 +792,41 @@ input[type=text] {
         top: 135vw;
     }
 
+    /*BILLEDER PÅ SIDERNE*/
+    /*kold, forside*/
+    .indhold .wp-image-415 {
+        display: none;
+    }
 
+    /*kold, vandmærke*/
+    .indhold .wp-image-433 {
+        width: 70vw;
+        right: 15vw;
+        top: 60vw;
+        opacity: 0.1;
+    }
+
+    /*kold, undervisning*/
+    .indhold .wp-image-428 {
+        z-index: -999;
+        opacity: 0.9;
+    }
+
+    /*stevns, yderligere info*/
+    .indhold .wp-image-361 {
+        visibility: hidden;
+    }
+
+    /* stevns klint, vandmærke*/
+    .indhold .wp-image-431 {
+        left: 3vw;
+        top: 60vw;
+    }
+
+    /*stevns, undervisning*/
+    .indhold .wp-image-417 {
+        opacity: 0.7;
+    }
 
     /**stevns klint oversigt over klinten**/
     .wp-image-192 {
@@ -737,6 +867,18 @@ input[type=text] {
     .pil_orange img {
         width: 2vw;
         margin-top: 0;
+    }
+
+    .pil_geo img {
+        width: 2vw;
+    }
+
+    .pil_stevns img {
+        width: 2vw;
+    }
+
+    .pil_kold img {
+        width: 2vw;
     }
 
 
@@ -839,6 +981,18 @@ input[type=text] {
         .pil_orange img {
             width: 1.5vw;
             margin-top: 0;
+        }
+
+        .pil_geo img {
+            width: 1.5vw;
+        }
+
+        .pil_stevns img {
+            width: 1.5vw;
+        }
+
+        .pil_kold img {
+            width: 1.5vw;
         }
 
         /*fixer search*/
@@ -1025,15 +1179,50 @@ input[type=text] {
 
         }
 
-        /*    STEVNS KLINT - BILLEDER PÅ SIDER*/
+        /* BILLEDER PÅ SIDER*/
+
+        /*kold, vandmærke*/
+        .indhold .wp-image-433 {
+            width: 60vw;
+            right: 3vw;
+            top: 28vw;
+            opacity: 0.1;
+        }
+
+        /*kold, undervisning*/
+        .indhold .wp-image-428 {
+            width: 40vw;
+            position: absolute;
+            right: 7vw;
+        }
+
+        /*stevns, yderligere info*/
         .indhold .wp-image-361 {
             width: 40vw;
+            visibility: visible;
             position: absolute;
             z-index: -999;
             top: 44vw;
             right: 7vw;
             opacity: 0.3;
         }
+
+        /* stevns klint, vandmærke*/
+        .indhold .wp-image-431 {
+            width: 79vw;
+            right: 14vw;
+            top: 28vw;
+        }
+
+        /*stevns, undervisning*/
+        .indhold .wp-image-417 {
+            width: 35vw;
+            position: absolute;
+            top: 43vw;
+            right: 7vw;
+        }
+
+        .indhold .wp-image-361 {}
 
         .indhold .wp-image-372 {
             width: 40vw;
@@ -1052,6 +1241,41 @@ input[type=text] {
             right: 7vw;
             opacity: 0.6;
         }
+
+        .indhold .wp-image-415 {}
+
+        .indhold .wp-image-417 {}
+
+        .indhold .wp-image-419 {
+            width: 55vw;
+            position: absolute;
+            z-index: -999;
+            right: 7vw;
+
+        }
+
+        .indhold .wp-image-424 {
+            width: 40vw;
+            position: absolute;
+            z-index: -999;
+            right: 7vw;
+            top: 40vw;
+            opacity: 0.1;
+        }
+
+        .indhold .wp-image-421 {
+            width: 35vw;
+            position: absolute;
+            z-index: -999;
+            right: 19vw;
+            top: 51vw;
+            opacity: 0.2;
+        }
+
+        /*        stevns klint vandmærke*/
+        .indhold .wp-image-431 {}
+
+
 
         /*pop op vidue på kort*/
 
