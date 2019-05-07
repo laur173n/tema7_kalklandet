@@ -275,7 +275,8 @@ p {
     font-size: 1.5rem;
     width: 100vw;
     top: 30vw;
-    left: 1vw;
+    right: 1vw;
+    text-align: right;
     color: #F45D2F;
     z-index: -2;
 }
@@ -289,7 +290,7 @@ p {
     font-size: 1rem;
     top: 40vw;
     color: #403D3D;
-    text-align: center;
+    text-align: right;
 }
 
 .adresse_link {
