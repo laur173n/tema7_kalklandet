@@ -940,10 +940,13 @@ input[type=text] {
             position: static;
 
         }
-        .tekst_aktuelt p {
+        .tekst_accordion p {
             margin-right: 20vw;
             margin-left: 1vw;
             line-height: 1.5rem;
+        }
+        .tekst_accordion h3 {
+          margin-left: 1vw;
         }
 
         .burger-button {
