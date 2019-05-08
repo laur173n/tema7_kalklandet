@@ -536,6 +536,7 @@ input[type=text] {
     right: 8vw;
     top: 90vw;
     opacity: 0.2;
+    height: 80vw;
 }
 
 /*kold, undervisning*/
@@ -799,9 +800,10 @@ input[type=text] {
 
     /*kold, vandmærke*/
     .indhold .wp-image-433 {
-        width: 70vw;
+        width: 55vw;
+        height: 60vw;
         right: 15vw;
-        top: 60vw;
+        top: 70vw;
         opacity: 0.1;
     }
 
@@ -1215,7 +1217,7 @@ input[type=text] {
 
         /*stevns, undervisning*/
         .indhold .wp-image-417 {
-            width: 35vw;
+            width: 45vw;
             position: absolute;
             top: 43vw;
             right: 7vw;
@@ -1224,7 +1226,7 @@ input[type=text] {
         .indhold .wp-image-361 {}
 
         .indhold .wp-image-372 {
-            width: 40vw;
+            width: 30vw;
             position: absolute;
             z-index: -999;
             top: 59vw;
