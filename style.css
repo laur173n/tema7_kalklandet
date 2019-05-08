@@ -563,7 +563,7 @@ input[type=text] {
 
 /*stevns, undervisning*/
 .indhold .wp-image-417 {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .indhold .wp-image-372 {
@@ -609,11 +609,11 @@ input[type=text] {
 
 
 .indhold .wp-image-421 {
-    width: 35vw;
+    width: 55vw;
     position: absolute;
     z-index: -999;
     right: 19vw;
-    top: 51vw;
+    top: 140vw;
     opacity: 0.2;
 }
 
@@ -826,8 +826,9 @@ input[type=text] {
 
     /*stevns, undervisning*/
     .indhold .wp-image-417 {
-        opacity: 0.7;
+        opacity: 0.9;
     }
+
 
     /**stevns klint oversigt over klinten**/
     .wp-image-192 {
@@ -1184,9 +1185,10 @@ input[type=text] {
 
         /*kold, vandmærke*/
         .indhold .wp-image-433 {
-            width: 60vw;
+            width: 50vw;
+            height: 50vw;
             right: 3vw;
-            top: 28vw;
+            top: 30vw;
             opacity: 0.1;
         }
 
@@ -1199,13 +1201,13 @@ input[type=text] {
 
         /*stevns, yderligere info*/
         .indhold .wp-image-361 {
-            width: 40vw;
+            width: 33vw;
             visibility: visible;
             position: absolute;
             z-index: -999;
             top: 44vw;
-            right: 7vw;
-            opacity: 0.3;
+            right: 3vw;
+            opacity: 0.9;
         }
 
         /* stevns klint, vandmærke*/
@@ -1217,10 +1219,10 @@ input[type=text] {
 
         /*stevns, undervisning*/
         .indhold .wp-image-417 {
-            width: 45vw;
+            width: 36vw;
             position: absolute;
             top: 43vw;
-            right: 7vw;
+            right: 3vw;
         }
 
         .indhold .wp-image-361 {}
@@ -1256,7 +1258,7 @@ input[type=text] {
         }
 
         .indhold .wp-image-424 {
-            width: 40vw;
+            width: 37vw;
             position: absolute;
             z-index: -999;
             right: 7vw;
@@ -1276,6 +1278,10 @@ input[type=text] {
         /*        stevns klint vandmærke*/
         .indhold .wp-image-431 {}
 
+        /*    Margin på bunden af indhold-Geo*/
+        .geo_indhold {
+            margin-bottom: 12vw;
+        }
 
 
         /*pop op vidue på kort*/
