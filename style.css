@@ -1212,8 +1212,8 @@ input[type=text] {
 
         /* stevns klint, vandmærke*/
         .indhold .wp-image-435 {
-            width: 79vw;
-            right: vw;
+            width: 70vw;
+            right: 0;
             top: 28vw;
         }
 
