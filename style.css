@@ -34,6 +34,13 @@ figure {
 .indhold h2 {
     margin: 5vw 4vw 5vw 4vw;
 }
+.tekst_aktuelt ul {
+    font-family: 'Montserrat', sans-serif;
+    color: #403D3D;
+    line-height: 1.5rem;
+        margin-left: 2.5vw;
+    margin-top: 0;
+        }
 
 h1,
 h2,
