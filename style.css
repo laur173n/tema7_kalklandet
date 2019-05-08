@@ -1213,13 +1213,13 @@ input[type=text] {
 
         /*stevns, yderligere info*/
         .indhold .wp-image-361 {
-            width: 33vw;
+            width: 40vw;
             visibility: visible;
             position: absolute;
             z-index: -999;
             top: 44vw;
-            right: 3vw;
-            opacity: 0.9;
+            right: 7vw;
+            opacity: 0.3;
         }
 
         /* stevns klint, vandmærke*/
@@ -1231,10 +1231,11 @@ input[type=text] {
 
         /*stevns, undervisning*/
         .indhold .wp-image-417 {
-            width: 36vw;
+            width: 40vw;
             position: absolute;
             top: 43vw;
-            right: 3vw;
+            right: 7vw;
+            opacity: 0.4;
         }
 
         .indhold .wp-image-361 {}
@@ -1259,7 +1260,6 @@ input[type=text] {
 
         .indhold .wp-image-415 {}
 
-        .indhold .wp-image-417 {}
 
         .indhold .wp-image-419 {
             width: 55vw;
@@ -1282,7 +1282,7 @@ input[type=text] {
             width: 35vw;
             position: absolute;
             z-index: -999;
-            right: 19vw;
+            right: 12vw;
             top: 51vw;
             opacity: 0.2;
         }
