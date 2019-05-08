@@ -1133,37 +1133,37 @@ input[type=text] {
         .geomuseum_navn {
             position: absolute;
             width: 16vw;
-            top: 46vw;
+            top: 44vw;
             left: 1vw;
         }
 
         .geomuseum_pin {
             width: 2vw;
-            top: 44vw;
+            top: 42vw;
             left: 17vw;
         }
 
         .stevnsklint_navn {
             width: 12vw;
-            top: 39vw;
+            top: 37vw;
             left: 24vw;
         }
 
         .stevnsklint_pin {
             width: 2.1vw;
-            top: 37vw;
+            top: 35vw;
             left: 36vw;
         }
 
         .koldkrig_navn {
             width: 17vw;
-            top: 46.5vw;
-            left: 35vw;
+            top: 44.6vw;
+            left: 36vw;
         }
 
         .koldkrig_pin {
             width: 2.2vw;
-            top: 40.8vw;
+            top: 39.5vw;
             left: 36vw;
         }
 
