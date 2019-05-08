@@ -1297,18 +1297,18 @@ input[type=text] {
         }
 
         #geomuseum_lokation figcaption {
-            left: 4vw;
-            top: 32vw;
+            left: 3vw;
+            top: 30vw;
         }
 
         #stevnsklint_lokation figcaption {
-            left: 23vw;
-            top: 26vw;
+            left: 22.5vw;
+            top: 23vw;
         }
 
         #koldkrig_lokation figcaption {
             left: 39.3vw;
-            top: 33vw;
+            top: 30vw;
         }
 
         figcaption a {
