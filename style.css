@@ -551,7 +551,7 @@ input[type=text] {
 }
 
 /* stevns klint, vandmærke*/
-.indhold .wp-image-431 {
+.indhold .wp-image-435 {
     width: 100vw;
     position: absolute;
     z-index: -999;
@@ -817,7 +817,7 @@ input[type=text] {
     }
 
     /* stevns klint, vandmærke*/
-    .indhold .wp-image-431 {
+    .indhold .wp-image-435 {
         left: 3vw;
         top: 60vw;
     }
@@ -1207,9 +1207,9 @@ input[type=text] {
         }
 
         /* stevns klint, vandmærke*/
-        .indhold .wp-image-431 {
+        .indhold .wp-image-435 {
             width: 79vw;
-            right: 14vw;
+            right: vw;
             top: 28vw;
         }
 
