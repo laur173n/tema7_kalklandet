@@ -933,6 +933,11 @@ input[type=text] {
             position: static;
 
         }
+        .tekst_aktuelt p {
+            margin-right: 20vw;
+            margin-left: 1vw;
+            line-height: 1.5rem;
+        }
 
         .burger-button {
             display: none;
