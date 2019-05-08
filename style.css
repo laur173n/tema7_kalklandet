@@ -471,6 +471,7 @@ figcaption a {
 .dato {
     font-family: 'Montserrat', sans-serif;
     color: #f45d2f;
+    font-size: 1.2rem;
 }
 
 .accordion_aktuelt {
@@ -493,9 +494,6 @@ figcaption a {
     color: #403D3D;
 }
 
-.dato {
-    font-size: 1.5rem;
-}
 
 .overskrift_aktuelt_h3 {
     text-align: center;
@@ -850,7 +848,7 @@ input[type=text] {
         text-align: left;
         width: 20%;
         display: inline-block;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         position: absolute;
         left: 30px;
         margin-top: 14px;
